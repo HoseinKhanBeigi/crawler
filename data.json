@@ -1,0 +1,250 @@
+[
+  {
+    "name": "src",
+    "children": [
+      {
+        "name": "App.js",
+        "children": [
+          {
+            "name": "[object Object]",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "App.test.js",
+        "children": [
+          {
+            "name": "[object Object]",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "index.js",
+        "children": [
+          {
+            "name": "[object Object]",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "logo.svg",
+        "children": [
+          {
+            "name": "[object Object]",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "components",
+        "children": [
+          {
+            "name": "CheckoutForm.js",
+            "children": [
+              {
+                "name": "[object Object]",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "ClientsAdminPage.js",
+            "children": [
+              {
+                "name": "[object Object]",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "DashboardProducts.js",
+            "children": [
+              {
+                "name": "[object Object]",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Loading.js",
+            "children": [
+              {
+                "name": "[object Object]",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Navigation.js",
+            "children": [
+              {
+                "name": "[object Object]",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "OrdersAdminPage.js",
+            "children": [
+              {
+                "name": "[object Object]",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Pagination.js",
+            "children": [
+              {
+                "name": "[object Object]",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "ProductPreview.js",
+            "children": [
+              {
+                "name": "[object Object]",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "ScrollToTop.js",
+            "children": [
+              {
+                "name": "ScrollToTop",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "SimilarProduct.js",
+            "children": [
+              {
+                "name": "[object Object]",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "ToastMessage.js",
+            "children": [
+              {
+                "name": "[object Object]",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "features",
+        "children": []
+      },
+      {
+        "name": "pages",
+        "children": [
+          {
+            "name": "AdminDashboard.js",
+            "children": [
+              {
+                "name": "[object Object]",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "CartPage.js",
+            "children": [
+              {
+                "name": "[object Object]",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "CategoryPage.js",
+            "children": [
+              {
+                "name": "[object Object]",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "EditProductPage.js",
+            "children": [
+              {
+                "name": "[object Object]",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Home.js",
+            "children": [
+              {
+                "name": "[object Object]",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Login.js",
+            "children": [
+              {
+                "name": "[object Object]",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "NewProduct.js",
+            "children": [
+              {
+                "name": "[object Object]",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "OrdersPage.js",
+            "children": [
+              {
+                "name": "[object Object]",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "ProductPage.js",
+            "children": [
+              {
+                "name": "[object Object]",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Signup.js",
+            "children": [
+              {
+                "name": "[object Object]",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "services",
+        "children": []
+      }
+    ]
+  }
+]

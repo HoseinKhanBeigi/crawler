@@ -1,0 +1,177 @@
+{
+    Node {
+  type: 'JSXElement',
+  start: 45,
+  end: 54,
+  loc: SourceLocation {
+    start: Position { line: 4, column: 6, index: 45 },
+    end: Position { line: 4, column: 15, index: 54 },
+    filename: undefined,
+    identifierName: undefined
+  },
+  openingElement: Node {
+    type: 'JSXOpeningElement',
+    start: 45,
+    end: 54,
+    loc: SourceLocation {
+      start: [Position],
+      end: [Position],
+      filename: undefined,
+      identifierName: undefined
+    },
+    name: Node {
+      type: 'JSXIdentifier',
+      start: 46,
+      end: 51,
+      loc: [SourceLocation],
+      name: 'Table'
+    },
+    attributes: [],
+    selfClosing: true
+  },
+  closingElement: null,
+  children: []
+}
+Node {
+  type: 'JSXElement',
+  start: 61,
+  end: 73,
+  loc: SourceLocation {
+    start: Position { line: 5, column: 6, index: 61 },
+    end: Position { line: 5, column: 18, index: 73 },
+    filename: undefined,
+    identifierName: undefined
+  },
+  openingElement: Node {
+    type: 'JSXOpeningElement',
+    start: 61,
+    end: 73,
+    loc: SourceLocation {
+      start: [Position],
+      end: [Position],
+      filename: undefined,
+      identifierName: undefined
+    },
+    name: Node {
+      type: 'JSXIdentifier',
+      start: 62,
+      end: 70,
+      loc: [SourceLocation],
+      name: 'Paginate'
+    },
+    attributes: [],
+    selfClosing: true
+  },
+  closingElement: null,
+  children: []
+}
+Node {
+  type: 'JSXElement',
+  start: 80,
+  end: 120,
+  loc: SourceLocation {
+    start: Position { line: 6, column: 6, index: 80 },
+    end: Position { line: 8, column: 14, index: 120 },
+    filename: undefined,
+    identifierName: undefined
+  },
+  openingElement: Node {
+    type: 'JSXOpeningElement',
+    start: 80,
+    end: 87,
+    loc: SourceLocation {
+      start: [Position],
+      end: [Position],
+      filename: undefined,
+      identifierName: undefined
+    },
+    name: Node {
+      type: 'JSXIdentifier',
+      start: 81,
+      end: 86,
+      loc: [SourceLocation],
+      name: 'Users'
+    },
+    attributes: [],
+    selfClosing: false
+  },
+  closingElement: Node {
+    type: 'JSXClosingElement',
+    start: 112,
+    end: 120,
+    loc: SourceLocation {
+      start: [Position],
+      end: [Position],
+      filename: undefined,
+      identifierName: undefined
+    },
+    name: Node {
+      type: 'JSXIdentifier',
+      start: 114,
+      end: 119,
+      loc: [SourceLocation],
+      name: 'Users'
+    }
+  },
+  children: [
+    Node {
+      type: 'JSXText',
+      start: 87,
+      end: 96,
+      loc: [SourceLocation],
+      extra: [Object],
+      value: '\n        '
+    },
+    Node {
+      type: 'JSXElement',
+      start: 96,
+      end: 105,
+      loc: [SourceLocation],
+      openingElement: [Node],
+      closingElement: null,
+      children: []
+    },
+    Node {
+      type: 'JSXText',
+      start: 105,
+      end: 112,
+      loc: [SourceLocation],
+      extra: [Object],
+      value: '\n      '
+    }
+  ]
+}
+Node {
+  type: 'JSXElement',
+  start: 96,
+  end: 105,
+  loc: SourceLocation {
+    start: Position { line: 7, column: 8, index: 96 },
+    end: Position { line: 7, column: 17, index: 105 },
+    filename: undefined,
+    identifierName: undefined
+  },
+  openingElement: Node {
+    type: 'JSXOpeningElement',
+    start: 96,
+    end: 105,
+    loc: SourceLocation {
+      start: [Position],
+      end: [Position],
+      filename: undefined,
+      identifierName: undefined
+    },
+    name: Node {
+      type: 'JSXIdentifier',
+      start: 97,
+      end: 102,
+      loc: [SourceLocation],
+      name: 'Icons'
+    },
+    attributes: [],
+    selfClosing: true
+  },
+  closingElement: null,
+  children: []
+}
+}
