@@ -3,6 +3,15 @@
     "name": "src",
     "children": [
       {
+        "name": "App.css",
+        "children": [
+          {
+            "name": "[object Object]",
+            "children": []
+          }
+        ]
+      },
+      {
         "name": "App.js",
         "children": [
           {
@@ -21,6 +30,33 @@
         ]
       },
       {
+        "name": "axios.js",
+        "children": [
+          {
+            "name": "[object Object]",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "categories.js",
+        "children": [
+          {
+            "name": "[object Object]",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "index.css",
+        "children": [
+          {
+            "name": "[object Object]",
+            "children": []
+          }
+        ]
+      },
+      {
         "name": "index.js",
         "children": [
           {
@@ -31,6 +67,33 @@
       },
       {
         "name": "logo.svg",
+        "children": [
+          {
+            "name": "[object Object]",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "reportWebVitals.js",
+        "children": [
+          {
+            "name": "[object Object]",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "setupTests.js",
+        "children": [
+          {
+            "name": "[object Object]",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "store.js",
         "children": [
           {
             "name": "[object Object]",
@@ -60,6 +123,15 @@
             ]
           },
           {
+            "name": "DashboardProducts.css",
+            "children": [
+              {
+                "name": "[object Object]",
+                "children": []
+              }
+            ]
+          },
+          {
             "name": "DashboardProducts.js",
             "children": [
               {
@@ -78,6 +150,15 @@
             ]
           },
           {
+            "name": "Navigation.css",
+            "children": [
+              {
+                "name": "[object Object]",
+                "children": []
+              }
+            ]
+          },
+          {
             "name": "Navigation.js",
             "children": [
               {
@@ -88,6 +169,15 @@
           },
           {
             "name": "OrdersAdminPage.js",
+            "children": [
+              {
+                "name": "[object Object]",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Pagination.css",
             "children": [
               {
                 "name": "[object Object]",
@@ -117,13 +207,22 @@
             "name": "ScrollToTop.js",
             "children": [
               {
-                "name": "ScrollToTop",
+                "name": "[object Object]",
                 "children": []
               }
             ]
           },
           {
             "name": "SimilarProduct.js",
+            "children": [
+              {
+                "name": "[object Object]",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "ToastMessage.css",
             "children": [
               {
                 "name": "[object Object]",
@@ -144,7 +243,26 @@
       },
       {
         "name": "features",
-        "children": []
+        "children": [
+          {
+            "name": "productSlice.js",
+            "children": [
+              {
+                "name": "[object Object]",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "userSlice.js",
+            "children": [
+              {
+                "name": "[object Object]",
+                "children": []
+              }
+            ]
+          }
+        ]
       },
       {
         "name": "pages",
@@ -159,7 +277,25 @@
             ]
           },
           {
+            "name": "CartPage.css",
+            "children": [
+              {
+                "name": "[object Object]",
+                "children": []
+              }
+            ]
+          },
+          {
             "name": "CartPage.js",
+            "children": [
+              {
+                "name": "[object Object]",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "CategoryPage.css",
             "children": [
               {
                 "name": "[object Object]",
@@ -186,6 +322,15 @@
             ]
           },
           {
+            "name": "Home.css",
+            "children": [
+              {
+                "name": "[object Object]",
+                "children": []
+              }
+            ]
+          },
+          {
             "name": "Home.js",
             "children": [
               {
@@ -204,7 +349,25 @@
             ]
           },
           {
+            "name": "NewProduct.css",
+            "children": [
+              {
+                "name": "[object Object]",
+                "children": []
+              }
+            ]
+          },
+          {
             "name": "NewProduct.js",
+            "children": [
+              {
+                "name": "[object Object]",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "OrdersPage.css",
             "children": [
               {
                 "name": "[object Object]",
@@ -222,7 +385,25 @@
             ]
           },
           {
+            "name": "ProductPage.css",
+            "children": [
+              {
+                "name": "[object Object]",
+                "children": []
+              }
+            ]
+          },
+          {
             "name": "ProductPage.js",
+            "children": [
+              {
+                "name": "[object Object]",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Signup.css",
             "children": [
               {
                 "name": "[object Object]",
@@ -243,7 +424,17 @@
       },
       {
         "name": "services",
-        "children": []
+        "children": [
+          {
+            "name": "appApi.js",
+            "children": [
+              {
+                "name": "[object Object]",
+                "children": []
+              }
+            ]
+          }
+        ]
       }
     ]
   }

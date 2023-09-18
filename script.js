@@ -2,26 +2,13 @@ const fs = require("fs");
 const path = require("path");
 
 function extractWordsFromCode(code) {
-  const names = code.match(/(?<=function\s)[A-Z]\w+/g) || [];
+  const names = code.match(/(?:function\s+(\w+)\s*\([^)]*\)|(\w+)\s*=\s*\([^)]*\)\s*=>)/g) || [];
   // code.match(/const\s+(\w+)\s*=\s*\(/g) || [];
   const componentNames = code.match(/<(?:[A-Z]\w+|\/[A-Z]\w+)>/g) || [];
   return {
     functions: names,
     components: componentNames.map((name) => name.replace(/[<>]/g, "")),
   };
-}
-
-function extractNameFunctionFromCode(code) {
-  let result = "";
-  if (code.match(/const\s+(\w+)\s*=\s*\(/)) {
-    result = code.match(/const\s+(\w+)\s*=\s*\(/);
-  } else if (code.match(/function\s+([^\s\(]+)/)) {
-    result = code.match(/function\s+([^\s\(]+)/);
-  }
-  if (result && result[1]) {
-    return result[1];
-  }
-  return null;
 }
 
 function parseTextToStructure2(lines) {
@@ -63,20 +50,9 @@ function processFilesInFolder(folderPath) {
 
     if (stats.isFile()) {
       const fileContent = fs.readFileSync(filePath, "utf8");
-
-      let extractedWords = "";
-      const angleBrackets = `${fileContent}`.match(/<[^>]*>/g);
-      if (angleBrackets) {
-        extractedWords = extractWordsFromCode(fileContent);
-        console.log(extractedWords);
-      } else {
-        extractedWords = extractNameFunctionFromCode(`${fileContent}`);
-      }
-      // const extractedWords = extractWordsFromCode(fileContent);
+      const extractedWords = extractWordsFromCode(fileContent);
+      console.log(extractedWords/PersistGate)
       const objectRepresentation = parseTextToStructure2(extractedWords);
-
-      // const capitalWordData = extractImmediateChildren(`${fileContent}`);
-
       if (Object.keys(objectRepresentation).length > 0) {
         result[file] = objectRepresentation;
       }
