@@ -1,0 +1,10 @@
+@import '../variables';
+
+.modalForAddPhoneNumber {
+  :global(.has-error.has-feedback) :global(.ant-form-item-children-icon),
+  :global(.has-success.has-feedback) :global(.ant-form-item-children-icon),
+  :global(.has-warning.has-feedback) :global(.ant-form-item-children-icon),
+  :global(.is-validating.has-feedback) :global(.ant-form-item-children-icon) {
+    top: 49px !important;
+  }
+}

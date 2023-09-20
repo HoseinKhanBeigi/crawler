@@ -1,0 +1,35 @@
+@import '../variables';
+
+:global {
+  .isFull {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .notFull {
+    background-color: #fff;
+    box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.12);
+  }
+}
+
+.leftColumn {
+  :global(.ant-collapse-borderless) > :global(.ant-collapse-item) {
+    border-bottom: 1px solid #eee;
+  }
+
+  :global(.ant-collapse-borderless) > :global(.ant-collapse-item) > :global(.ant-collapse-content) > :global(.ant-collapse-content-box) {
+    padding: 0 !important;
+
+    .noData {
+      color: #ccc;
+      font-size: 12px;
+      text-align: center;
+      margin-bottom: 0;
+    }
+  }
+
+  :global(.ant-collapse) > :global(.ant-collapse-item) > :global(.ant-collapse-header) :global(.ant-collapse-arrow) svg {
+    font-size: 9px;
+    color: #5f5f5f;
+  }
+}

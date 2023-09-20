@@ -1,0 +1,62 @@
+@import '../variables';
+
+.preview {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: #f9f9f9;
+  border: 1px solid #ebebeb;
+  margin-bottom: 20px;
+
+  .previewActions {
+    background: #ededed;
+    padding: 5px 15px;
+    height: 37px;
+
+    .previewTitle {
+      float: right;
+      font-weight: normal;
+      line-height: 24px;
+      margin: 0;
+    }
+
+    .previewAction {
+      float: left;
+      margin: 3px 10px 0 0;
+      font-size: 20px;
+      color: #848484;
+      z-index: 2;
+      transition: 0.2s ease color;
+
+      &:hover {
+        color: $color-info;
+      }
+    }
+  }
+
+  .placeholder {
+    display: block;
+    width: 100%;
+  }
+}
+
+.imgWrapper {
+  position: relative !important;
+  //max-width: 500px;
+  //margin: 15px auto;
+
+  > div {
+    position: relative !important;
+
+    //> div {
+    //  top: 5px;
+    //  left: 15px;
+    //}
+  }
+}
+
+.object_fit_cover {
+  width: 100vh;
+  height: 100vh;
+  display: block;
+}

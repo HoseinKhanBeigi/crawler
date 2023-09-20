@@ -1,0 +1,82 @@
+/* stylelint-disable no-descending-specificity */
+@import '../variables.scss';
+
+.container {
+  width: 934px;
+
+  @media only screen and (max-width: 1032px) {
+    width: 100%;
+    min-width: unset;
+  }
+
+  :global * {
+    font-family: iranyekan, Arial, 'Helvetica Neue', Helvetica, sans-serif !important;
+
+    &::-webkit-scrollbar-thumb {
+      width: 3px;
+      border-radius: 2px;
+      background-color: #dfdfdf !important;
+      box-shadow: none !important;
+      border: 4px solid rgba(0, 0, 0, 0);
+      background-clip: padding-box;
+    }
+
+    &::-webkit-scrollbar-track {
+      width: 3px;
+      border: solid 3px transparent;
+    }
+  }
+
+  .header {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--primary);
+    padding: 24px;
+  }
+
+  .content {
+    padding: 0 !important;
+
+    div[role=tabpanel] {
+      padding: 0;
+    }
+
+    div[aria-selected=true] {
+      &::after {
+        border-bottom: 3px solid #0052cc;
+      }
+    }
+
+    div[role=tab] {
+      &:first-of-type {
+        margin-right: 24px;
+        padding: 8px;
+      }
+    }
+
+    .tab {
+      font-size: 14px;
+      font-weight: normal;
+      color: var(--secondary);
+      cursor: pointer;
+      line-height: 1.8;
+      margin: 0;
+      padding: 0 8px 10px;
+
+      @media only screen and (max-width: 580px) {
+        font-size: 12px;
+        padding: 0 4px 10px;
+      }
+    }
+
+    .activeTab {
+      font-weight: bold;
+      color: var(--primary);
+      @extend.tab;
+    }
+
+    .disabledTab {
+      cursor: not-allowed;
+    }
+  }
+}

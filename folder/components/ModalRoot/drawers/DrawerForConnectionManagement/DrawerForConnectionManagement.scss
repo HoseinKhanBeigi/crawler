@@ -1,0 +1,23 @@
+.addConnectionContainer {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+
+  .addBtn {
+    background-color: rgba(249, 249, 249, 0.45);
+    margin-top: 12px;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    height: 45px;
+    border: 1px dashed #595959;
+    padding: 12px;
+    cursor: pointer;
+  }
+}
+
+.close {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px;
+}

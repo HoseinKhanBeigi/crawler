@@ -1,0 +1,91 @@
+/* stylelint-disable */
+
+@import '../../../variables';
+
+.sidebarWrapper {
+  transition: all 0.2s;
+  overflow-x: hidden;
+}
+
+.collapsed {
+  & .logo {
+    transform: translateX(0) !important;
+
+    &::before {
+      opacity: 0 !important;
+      transform: translateY(-50%) !important;
+    }
+  }
+}
+
+.logoContainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 55px;
+  width: inherit;
+  background-color: #0c2e71;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+
+  & .logo {
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/SIVA_logoshape.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    transform: translateX(-30px);
+    transition: all 0.2s;
+    will-change: transform;
+
+    &::before {
+      content: '';
+      background-image: url('/images/SIVA_logotype.svg');
+      width: 100%;
+      height: 60%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      left: 35%;
+      top: 50%;
+      opacity: 1;
+      transform: translateY(-50%);
+      transition: all 0.2s;
+      will-change: transform, opacity;
+    }
+  }
+}
+
+.sidebar {
+  z-index: 9999;
+
+  :global {
+    .ant-layout-sider-children {
+      height: calc(100vh - 48px);
+      position: fixed;
+      top: 0;
+      right: 0;
+      overflow: hidden;
+
+      &:hover {
+        overflow-y: scroll;
+
+        &::-webkit-scrollbar {
+          width: 7px;
+          background: transparent;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background-color: darkgrey;
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+}

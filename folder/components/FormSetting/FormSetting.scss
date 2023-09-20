@@ -1,0 +1,107 @@
+@import '../variables';
+
+.root {
+  width: 100%;
+}
+
+.current,
+.available {
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 15px 0;
+  max-height: 300px;
+  height: 350px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.addColumn {
+  float: right;
+  background-color: #3d4db7;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid #3d4db7;
+  color: #fff;
+  padding: 0;
+
+  i {
+    font-size: 16px;
+    margin-top: 4px;
+  }
+}
+
+.item {
+  width: 100%;
+  display: inline-block;
+  padding: 6px 0;
+
+  p,
+  i {
+    float: right;
+  }
+
+  i {
+    margin-top: -2px;
+    font-size: 8px;
+    padding: 9px;
+    border: 1px solid #e8e8e8;
+    border-radius: 50%;
+  }
+
+  i:hover {
+    cursor: pointer;
+  }
+
+  p {
+    margin-right: 10px;
+  }
+}
+
+.main {
+  margin-right: 37px !important;
+}
+
+.submit {
+  background-color: #1890ff;
+  color: #fff;
+  padding: 7px 50px;
+}
+
+.submit:hover {
+  color: #1890ff;
+  background-color: #fff;
+  border: 1px solid #1890ff;
+}
+
+.title {
+  margin-top: 10px !important;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.removeCurrent {
+  color: red;
+}
+
+.addAvailable {
+  color: green;
+}
+
+.formName {
+  text-align: center;
+  font-weight: bold;
+  font-size: 17px;
+  margin-bottom: 45px;
+}
+
+.addColumn:focus {
+  outline: none;
+}
+
+.addColumn:hover {
+  background-color: #fff;
+  color: #3d4db7;
+  border: 1px solid #3d4db7;
+}

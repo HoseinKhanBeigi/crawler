@@ -1,0 +1,33 @@
+@import '../variables';
+
+.root {
+  :global(.ant-modal-body) {
+    background: #ecf0f5;
+  }
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 5px;
+  margin-bottom: 30px;
+}
+
+.title {
+  color: #0074c2;
+  font-weight: normal;
+  line-height: 20px;
+  flex: 1;
+}
+
+.simpleCard {
+  margin: 0 0 20px;
+  padding: 15px;
+  border-radius: 3px;
+  background: #fff;
+  border-top: 3px solid #d2d6de;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}

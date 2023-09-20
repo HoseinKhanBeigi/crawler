@@ -1,0 +1,21 @@
+@import '../../variables';
+
+:global(.has-error) {
+  :global(.DateInput) {
+    border-color: #f5222d;
+    color: #f5222d;
+  }
+}
+
+:global(.SingleDatePicker__picker.SingleDatePicker__picker--direction-left.SingleDatePicker__picker--horizontal.SingleDatePicker__picker--rtl) {
+  left: unset !important;
+  right: 0;
+}
+
+.controlLabel {
+  display: inline-block;
+  font-size: 12px;
+  color: #7a7a7a;
+  margin-bottom: 4px;
+  min-width: 130px;
+}

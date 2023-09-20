@@ -1,0 +1,71 @@
+@import '../../variables';
+
+.fieldsWrapper {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: calc(100% - 22px);
+  overflow-y: auto;
+}
+
+.emptyPartContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 488px;
+  min-height: 524px;
+  border-radius: 4px;
+  border: solid 1px #dadde1;
+  background-color: var(--bg);
+  margin-top: 24px;
+
+  .headerWrapper {
+    display: flex;
+    width: 100%;
+    max-width: calc(100% - 48px);
+    justify-content: flex-start;
+    padding: 24px;
+  }
+
+  .emptyPartHeader {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--primary);
+    align-self: flex-start;
+  }
+
+  .emptyPartDesc {
+    width: 100%;
+    border-bottom: 1px solid #dadde1;
+    border-top: 1px solid #dadde1;
+    text-align: center;
+    padding: 16px 0;
+    font-size: 12px;
+    color: var(--secondary);
+  }
+}
+
+.formFieldsContainer {
+  margin: 24px auto;
+  width: calc(100% - 48px);
+}
+
+.centerPart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 440px;
+  height: 265px;
+  border-radius: 4px;
+  border: dashed 2px #dadde1;
+  margin-top: 24px;
+}
+
+.centerPartDesc {
+  font-size: 14px;
+  color: var(--secondary);
+  margin-top: 24px;
+  text-align: center;
+}

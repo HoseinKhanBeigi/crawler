@@ -1,0 +1,23 @@
+
+.wrapper {
+  display: flex !important;
+  justify-content: space-between;
+  padding: 5px 15px;
+
+  .name {
+    font-size: 12px;
+  }
+
+  .relation {
+    display: flex;
+
+    p,
+    b {
+      width: unset;
+    }
+
+    p {
+      margin-right: 5px;
+    }
+  }
+}

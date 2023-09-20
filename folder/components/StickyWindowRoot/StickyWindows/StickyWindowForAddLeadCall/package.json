@@ -1,0 +1,6 @@
+{
+  "name": "StickyWindowForAddLeadCall",
+  "version": "1.0.0",
+  "main": "./StickyWindowForAddLeadCall.js",
+  "private": true
+}

@@ -1,0 +1,6 @@
+{
+  "name": "ModalForManualAddCallWithoutSearch",
+  "version": "1.0.0",
+  "main": "./ModalForManualAddCallWithoutSearch.js",
+  "private": true
+}

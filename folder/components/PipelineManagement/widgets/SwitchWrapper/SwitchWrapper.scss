@@ -1,0 +1,19 @@
+.switchButtonContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  label[data-checked=true] {
+    background-color: #0b66ff !important;
+  }
+
+  label:focus-within {
+    border: none !important;
+  }
+}
+
+.switchButtonTitle {
+  color: var(--primary);
+  font-size: 14px;
+  font-weight: 500;
+}

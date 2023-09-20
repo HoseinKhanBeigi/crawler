@@ -1,0 +1,24 @@
+@import '../variables';
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin: 0 0 25px;
+}
+
+.upload {
+  width: 80px;
+  height: 80px;
+
+  :global(.ant-upload-select-picture-card),
+  :global(.ant-upload-list-picture-card .ant-upload-list-item) {
+    margin: 0;
+    width: 80px;
+    height: 80px;
+  }
+
+  .uploadText {
+    font-size: 12px;
+  }
+}

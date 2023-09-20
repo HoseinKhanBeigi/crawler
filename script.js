@@ -2,11 +2,25 @@ const fs = require("fs");
 const path = require("path");
 
 function extractWordsFromCode(code) {
-  const names = code.match(/(?:function\s+(\w+)\s*\([^)]*\)|(\w+)\s*=\s*\([^)]*\)\s*=>)/g) || [];
-  // code.match(/const\s+(\w+)\s*=\s*\(/g) || [];
+  const functionRegex = /(function\s+(\w+)\s*\([^)]*\)|const\s+(\w+)\s*=\s*\([^)]*\)\s*=>)/g;
+  
+  // Find function names
+  const functionNames = [];
+  let match;
+  while ((match = functionRegex.exec(code)) !== null) {
+    // Use match[2] for regular function names and match[3] for arrow function variable names
+    if (match[2]) {
+      functionNames.push(`${match[2]}`);
+    } else if (match[3]) {
+      functionNames.push(`${match[3]}`);
+    }
+  }
+  
+
+  
   const componentNames = code.match(/<(?:[A-Z]\w+|\/[A-Z]\w+)>/g) || [];
   return {
-    functions: names,
+    functions: functionNames,
     components: componentNames.map((name) => name.replace(/[<>]/g, "")),
   };
 }
@@ -28,7 +42,15 @@ function parseTextToStructure2(lines) {
     }
   } else {
     const componentName = lines;
-    if (componentName) {
+    console.log(componentName)
+    if (componentName.functions) {
+      if (currentComponent === null) {
+        currentComponent = componentName.functions[0];
+        result[currentComponent] = {};
+      } else {
+        result[currentComponent][componentName] = componentName.components;
+      }
+    } else {
       if (currentComponent === null) {
         currentComponent = componentName;
         result[currentComponent] = {};
@@ -37,6 +59,7 @@ function parseTextToStructure2(lines) {
       }
     }
   }
+
   return result;
 }
 
@@ -51,7 +74,7 @@ function processFilesInFolder(folderPath) {
     if (stats.isFile()) {
       const fileContent = fs.readFileSync(filePath, "utf8");
       const extractedWords = extractWordsFromCode(fileContent);
-      console.log(extractedWords/PersistGate)
+
       const objectRepresentation = parseTextToStructure2(extractedWords);
       if (Object.keys(objectRepresentation).length > 0) {
         result[file] = objectRepresentation;
@@ -101,6 +124,7 @@ if (require.main === module) {
 
     for (const key in json) {
       if (json.hasOwnProperty(key)) {
+        
         const obj = { name: key, children: [] };
         const child = json[key];
 

@@ -1,0 +1,43 @@
+@import '../variables';
+
+.root {
+  :global {
+    .ant-tabs-nav {
+      display: block !important;
+
+      > div {
+        display: flex;
+
+        .ant-tabs-tab {
+          flex: 1;
+          text-align: center;
+        }
+      }
+    }
+
+    .ant-tabs {
+      height: 100%;
+      overflow: unset;
+    }
+
+    .ant-tabs-bar {
+      margin: 0 !important;
+    }
+
+    .ant-tabs-content {
+      height: 100%;
+      padding: 15px;
+    }
+  }
+}
+
+.tabsBox {
+  height: 100%;
+}
+
+.tabsBoxShadow {
+  background-color: #ffffff;
+  margin-bottom: 16px;
+  padding: 12px 0;
+  border-radius: 4px;
+}

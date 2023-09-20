@@ -1,0 +1,23 @@
+@import '../../variables';
+
+.products {
+  display: flex !important;
+  padding: 3px 15px;
+
+  b {
+    color: #3a3a3a;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-block;
+    width: 100px;
+  }
+
+  p {
+    color: #424242;
+    font-size: 12px;
+    margin-bottom: 5px;
+    width: 150px;
+    display: block;
+    word-break: break-all;
+  }
+}

@@ -1,0 +1,192 @@
+.cardDetail {
+  width: 100%;
+  max-height: calc(100vh - 178px);
+
+  &:last-of-type {
+    max-width: 100%;
+  }
+
+  .detailTitle {
+    font-weight: bold;
+    padding: 16px;
+    font-size: 14px;
+    color: var(--primary);
+    border-top: 1px solid #dadde1;
+    border-bottom: 1px solid #dadde1;
+  }
+
+  .detailContainer {
+    max-height: calc(100% - 88px);
+    overflow-y: auto;
+  }
+
+  .formWrapper {
+    padding: 16px;
+
+    .defaultText {
+      font-size: 12px;
+      color: var(--text-field-label);
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    .editFieldsButton {
+      width: 100% !important;
+      margin-top: 24px;
+      border-radius: 4px !important;
+      border: dashed 1px var(--icon) !important;
+
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      svg {
+        width: 16px;
+        height: 16px;
+        margin-bottom: 3px;
+      }
+
+      .editButtonText {
+        font-size: 14px;
+        font-weight: normal;
+        color: var(--icon);
+        margin-right: 8px;
+      }
+    }
+  }
+
+  .historyContainer {
+    margin: 0 16px;
+
+    .historyTitle {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--primary);
+      margin-top: 24px;
+      margin-bottom: 8px;
+    }
+
+    .cardHistoryContainer {
+      display: flex;
+      align-items: center;
+
+      .editIconWrapper {
+        background-color: var(--light-blue);
+        border-radius: 50%;
+        width: 32px;
+        min-width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 24px;
+
+        svg path {
+          fill: #0065ff;
+        }
+      }
+
+      .iconWrapper {
+        background-color: var(--light-blue);
+        border-radius: 50%;
+        width: 32px;
+        min-width: 32px;
+        height: 32px;
+        min-height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 24px;
+      }
+
+      .cardHistoryDetail {
+        font-size: 14px;
+        font-weight: normal;
+        color: var(--text-field-label);
+      }
+
+      .historyDate {
+        font-size: 12px;
+        font-weight: 200;
+        color: var(--text-field-label);
+        margin-right: 59px;
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
+
+.borderLeft {
+  border-left: 1px solid #dadde1;
+}
+
+:global {
+  .card-detail-page {
+    .second-section-cardDetail {
+      max-height: calc(100vh - 140px);
+    }
+
+    .second-section-card-Detail {
+      width: 100%;
+      margin: 0 !important;
+    }
+
+    .second-section-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      overflow-y: auto;
+      border-radius: 4px;
+      background-color: #fff;
+    }
+
+    .second-section-form-Wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      padding-bottom: 12px;
+      overflow-y: auto;
+      height: calc(100% - 70px);
+    }
+
+    .second-section-history-container {
+      margin: 0;
+      padding: 12px;
+      height: 100%;
+
+      > div:nth-child(2) {
+        height: calc(100% - 70px);
+        overflow-y: scroll;
+      }
+    }
+
+    .second-section-detail-title {
+      border-top: none;
+    }
+
+    .second-section-border-left {
+      border-left: none;
+    }
+
+    .second-section-detail-container {
+      height: 100%;
+      max-height: 100%;
+      overflow-y: unset;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      gap: 16px;
+    }
+
+    .phase-details {
+      height: 370px;
+    }
+
+    .activities {
+      height: 610px;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@import '../variables';
+
+.unMaskMobileNumber {
+  :global(.unMaskPhoneNumber) {
+    font-size: 12px !important;
+    color: #1890ff !important;
+    direction: ltr !important;
+    display: block;
+  }
+
+  :global(.maskPhoneNumber) {
+    font-size: 12px !important;
+    color: #424242;
+    display: block;
+    margin-bottom: 0 !important;
+    direction: ltr !important;
+    text-align: right;
+  }
+}

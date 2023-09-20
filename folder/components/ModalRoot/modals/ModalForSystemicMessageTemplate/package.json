@@ -1,0 +1,7 @@
+{
+    "name": "ModalForSystemicTemplateMessage",
+    "version": "1.0.0",
+    "main": "./ModalForSystemicTemplateMessage.js",
+    "private": true
+  }
+  

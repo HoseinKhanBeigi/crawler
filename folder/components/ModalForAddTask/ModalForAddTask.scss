@@ -1,0 +1,44 @@
+
+.datePicker {
+  :global(.ant-form-item-children-icon) {
+    top: unset !important;
+    bottom: 0 !important;
+  }
+}
+
+.form {
+  :global(.has-error.has-feedback) :global(.ant-form-item-children-icon),
+  :global(.has-success.has-feedback) :global(.ant-form-item-children-icon),
+  :global(.has-warning.has-feedback) :global(.ant-form-item-children-icon),
+  :global(.is-validating.has-feedback) :global(.ant-form-item-children-icon) {
+    top: 45px !important;
+  }
+}
+
+.labels {
+  margin: 5px 0;
+  display: block;
+  color: #000c17;
+  line-height: 18px;
+  font-size: 13px;
+}
+
+//.upload {
+//  display: flex;
+//  flex-direction: row-reverse;
+//  justify-content: space-between;
+//
+//  :global(.ant-upload-list-item) {
+//    margin-top: 5px;
+//  }
+//
+//  :global(.ant-upload-list) {
+//    width: 100%;
+//    margin-left: 10px;
+//
+//    :global(.anticon) {
+//      padding-right: 15px;
+//    }
+//  }
+//}
+

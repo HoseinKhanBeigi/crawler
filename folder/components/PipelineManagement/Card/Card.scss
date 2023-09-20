@@ -1,0 +1,77 @@
+@import '../variables.scss';
+
+.cardsContainer {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 16px;
+  cursor: pointer;
+  margin: 0 0 8px;
+  border-radius: 4px;
+  border: solid 1px #dedede;
+  background-color: var(--bg);
+
+  p {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--primary);
+  }
+}
+
+.draggingCard {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 16px;
+  cursor: pointer;
+  margin: 0 0 8px;
+  border-radius: 4px;
+  border: solid 1px #8d8d8d;
+  background-color: var(--bg);
+  opacity: 0.5;
+
+  p {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--primary);
+  }
+}
+
+.formFieldValuePreview {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-field);
+  margin-top: 8px;
+  margin-bottom: 24px;
+  margin-right: 16px;
+}
+
+.formFieldTitleOverview {
+  display: flex;
+  align-items: center;
+
+  .formFieldTitleText {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text-field-label);
+    margin-right: 4px;
+  }
+
+  span {
+    width: calc(100% - 16px);
+  }
+
+  svg path {
+    fill: var(--secondary);
+  }
+}
+
+.cardTitle {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--primary);
+  padding-bottom: 8px;
+  border-bottom: 1px solid #dadde1;
+  margin-bottom: 16px;
+  width: 100%;
+}

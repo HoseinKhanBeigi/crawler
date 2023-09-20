@@ -1,0 +1,21 @@
+@import '../variables';
+.modalForVerifyData{
+    :global{
+        .ant-modal-body{
+            padding: 0!important;
+        }
+    }
+}
+.navTo{
+    height: 32px;
+    color: #ffffff;
+    padding: 5px 16px;
+    background-color: #1c92ff;
+    margin-bottom: 18px;
+    b{
+        text-decoration: underline;
+    }
+    a{
+        color: #ffffff;
+    }
+}

@@ -1,0 +1,13 @@
+.label {
+  padding: 5px 15px;
+}
+
+.required {
+  color: red;
+}
+
+:global(.ant-form-explain) {
+  font-size: 12px;
+  margin-top: 5px;
+  font-weight: 400;
+}

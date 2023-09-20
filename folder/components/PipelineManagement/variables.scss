@@ -1,0 +1,93 @@
+/**
+ * React Starter Kit (https://www.reactstarterkit.com/)
+ *
+ * Copyright © 2014-present Kriasoft, LLC. All rights reserved.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+
+/*
+ * Typography
+ * ========================================================================
+ */
+
+$font-family-base: iranyekan, sans-serif, 'Segoe UI', 'HelveticaNeue-Light';
+
+/*
+ * Layout
+ * ========================================================================
+ */
+
+$max-content-width: 1000px;
+
+/*
+ * Media queries breakpoints
+ * ========================================================================
+ */
+
+$screen-xs-min: 480px; /* Extra small screen / phone */
+$screen-sm-min: 768px; /* Small screen / tablet */
+$screen-md-min: 992px; /* Medium screen / desktop */
+$screen-lg-min: 1200px; /* Large screen / wide desktop */
+
+/*
+ * color
+ * ========================================================================
+ */
+
+$gradient-light: #b7bcc8;
+$gradient-dark: #7f8798;
+$disabled-primary: #c3b052;
+$secondary: #9a9fa9;
+$font-color: #1c1c1c;
+$light-font-color: #fff;
+$primary: #0089ff;
+$logo-shadow: rgba(57, 57, 57, 0.5);
+$disabled-font-color: #c2c2c2;
+$upload-button-outer-shadow: rgba(0, 0, 0, 0.5);
+$button-shadow: rgba(63, 63, 63, 0.5);
+$radio-group-color: #656565;
+$error: #ff2727;
+$warmGrey: #737373;
+$greyBrown: #5b5b5b;
+$primary-background: #fcfcfc;
+$input-border: rgba(29, 64, 106, 0.12);
+$input-label: #4f677a;
+
+/*
+ * global styles
+ * =============================================
+*/
+:root {
+  --dark: #1f2439;
+  --slate-grey: #686c73;
+  --medium-green: #38be43;
+  --icon: #535e77;
+  --sidebar: #101d40;
+  --light-slider: #212d4e;
+  --lightest-gray: #f2f2f2;
+  --light-gray: #c2c2c2;
+  --red: #ff5252;
+  --secondary: #a6aaaf;
+  --bg: #fefefe;
+  --perple: #b777d2;
+  --green: #b9d349;
+  --primary: #1c1c1c;
+  --light-orange: #ffb100;
+  --orange: #fec74b;
+  --fill-text-box: #fafbfc;
+  --border: #dfe1e5;
+  --text-field-label: #6b778c;
+  --light-blue: #e7f5ff;
+  --text-field: #42526e;
+}
+
+/*
+ * mixins
+ * ========================================================================
+ */
+
+%font-family {
+  font-family: $font-family-base;
+}

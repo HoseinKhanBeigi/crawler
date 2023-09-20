@@ -1,0 +1,6 @@
+{
+  "name": "CertificateSerialNumber",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./CertificateSerialNumber.js"
+}

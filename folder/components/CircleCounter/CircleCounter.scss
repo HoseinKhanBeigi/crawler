@@ -1,0 +1,37 @@
+.circleCounter{
+    position: absolute;
+    width: 55px;
+    top: -11px;
+    right: 7px;
+    svg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 59px;
+        height: 60px;
+        transform: rotateY(0deg) rotateZ(-90deg);
+      }
+      
+      svg circle {
+        stroke-dasharray: 156px;
+        stroke-dashoffset: 0px;
+        stroke-linecap: round;
+        stroke-width: 3px;
+        stroke: #ff4d4f;
+        fill: none;
+        animation: countdown 11s linear infinite forwards;
+      }
+      
+      @keyframes countdown {
+        from {
+          stroke-dashoffset: 165px;
+        }
+        to {
+          stroke-dashoffset: 0px;
+        }
+      }
+      .circleCounter__circle{
+        width: 61px;
+        height: 58px;
+      }
+}

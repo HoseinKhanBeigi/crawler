@@ -1,0 +1,17 @@
+@import '../variables';
+
+.formGenerator {
+  :global(.ant-form-item-required::before) {
+    content: none;
+  }
+
+  :global(.ant-form-item-required::after) {
+    display: inline-block;
+    margin-right: 6px;
+    content: '*';
+    font-family: SimSun, serif;
+    line-height: 1;
+    font-size: 12px;
+    color: #f5222d;
+  }
+}

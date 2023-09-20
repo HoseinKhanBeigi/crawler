@@ -1,0 +1,6 @@
+{
+  "name": "CPSimpleDatePicker",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./CPSimpleDatePicker.js"
+}

@@ -1,0 +1,34 @@
+@import '../variables';
+
+.card {
+  .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .titleCount {
+    display: block;
+
+    p {
+      text-align: left;
+    }
+  }
+
+  :global {
+    .ant-card-body {
+      padding: 15px;
+    }
+
+    .anticon {
+      font-size: 30px;
+      padding: 5px;
+      border-radius: 3px;
+      color: #fff;
+    }
+
+    .ant-progress-status-success .ant-progress-text {
+      color: #000;
+    }
+  }
+}

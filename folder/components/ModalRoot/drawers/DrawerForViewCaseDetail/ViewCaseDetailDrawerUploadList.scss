@@ -1,0 +1,20 @@
+.wrapper {
+  width: 100%;
+
+  :global {
+    .ant-upload-list-item-name {
+      width: 100%;
+      text-align: left;
+      padding-left: 22px !important;
+      color: #1890ff;
+    }
+
+    .ant-upload-list-item-card-actions {
+      margin-right: 4px;
+
+      & a[title='حذف فایل'] {
+        display: none;
+      }
+    }
+  }
+}

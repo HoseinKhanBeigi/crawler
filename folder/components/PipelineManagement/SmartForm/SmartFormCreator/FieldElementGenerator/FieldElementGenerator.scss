@@ -1,0 +1,126 @@
+.DataTypeHeader {
+  padding: 24px 24px 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.FieldElementGenerator {
+  width: 100%;
+  min-width: 488px;
+  max-height: calc(100vh - 48px);
+}
+
+.elementDesc {
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--secondary);
+}
+
+.descriptionWrapper {
+  margin-top: 24px;
+}
+
+.selectHeader {
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  margin-bottom: 8px;
+
+  span {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text-field-label);
+    margin-right: 8px;
+  }
+}
+
+.submitButtonWrapper {
+  display: flex;
+  justify-content: flex-end;
+  padding: 24px 0 24px 24px;
+
+  button {
+    background-color: #0065ff;
+    align-self: flex-end;
+
+    &:hover {
+      background-color: #0065ff;
+    }
+  }
+}
+
+.optionWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+  margin-top: 8px;
+
+  span {
+    margin-left: 8px;
+    color: var(--text-field);
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+.elementName {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.elementsWrapper {
+  padding: 16px 24px;
+  max-height: calc(100vh - 256px);
+  margin: auto;
+  overflow-y: auto;
+}
+
+.optionInput {
+  width: 392px;
+  min-width: 392px;
+}
+
+.optionTitleWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 405px;
+
+  .optionTitle {
+    color: var(--text-field-label);
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+.optionContainer {
+  margin-top: 24px;
+}
+
+.recycleBinButton {
+  padding: 0 !important;
+  margin-right: 12px;
+
+  span {
+    margin: 0;
+  }
+}
+
+.addOptionButton {
+  height: 16px !important;
+  display: flex !important;
+  align-items: center !important;
+  padding: 0 !important;
+
+  span {
+    height: 16px;
+    display: flex !important;
+    align-items: center !important;
+  }
+}
+
+.switchElementWrapper {
+  margin: 24px 0;
+}

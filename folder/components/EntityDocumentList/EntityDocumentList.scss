@@ -1,0 +1,90 @@
+@import '../variables';
+
+.entityDocumentList {
+  :global {
+    .anticon-loading {
+      margin-left: 10px;
+    }
+
+    .ant-collapse-header .arrow {
+      right: unset !important;
+      left: 16px !important;
+      top: 22px !important;
+      font-size: 11px !important;
+    }
+  }
+}
+
+.count {
+  display: inline-block;
+  color: #888;
+  margin-right: 3px;
+  font-size: 12px;
+}
+
+.headerList {
+  font-weight: bold;
+}
+
+.uploadForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0 !important;
+  font-size: 16px;
+  border: none;
+  box-shadow: none !important;
+  color: #cecece;
+  height: 66px;
+  width: 100%;
+  font-weight: 600;
+
+  &:hover,
+  &:focus {
+    border: none;
+    box-shadow: none !important;
+    color: #cecece;
+    background-color: #fff;
+  }
+
+  i {
+    padding: 8px;
+    background: #ccc;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-left: 8px;
+    width: 38px;
+    height: 38px;
+  }
+}
+
+.docsList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  .list {
+    display: flex;
+    position: relative;
+    padding: 10px 15px;
+    align-items: center;
+    border-bottom: 1px solid #e8e8e8;
+
+    .type {
+      font-size: 12px;
+    }
+
+    i {
+      margin-left: 5px;
+      font-size: 15px;
+      color: #2196f3;
+    }
+  }
+}
+
+.addBtnTitle {
+  width: 150px;
+  text-align: right;
+}

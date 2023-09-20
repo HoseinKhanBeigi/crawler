@@ -1,0 +1,6 @@
+{
+  "name": "ModalForEditEmployee",
+  "version": "1.0.0",
+  "main": "./ModalForEditEmployee.js",
+  "private": true
+}

@@ -1,0 +1,6 @@
+{
+  "name": "PersonalInfoTab",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./PersonalInfoTab.js"
+}

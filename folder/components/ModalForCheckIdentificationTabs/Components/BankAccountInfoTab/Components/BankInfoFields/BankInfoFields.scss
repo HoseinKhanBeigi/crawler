@@ -1,0 +1,66 @@
+.root {
+  .additionalInfo {
+    padding: 0 15px;
+  }
+
+  .input {
+    margin-bottom: 15px;
+  }
+
+  .loading {
+    margin: 150px auto;
+    width: 25px;
+  }
+
+  .radioBox {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    font-weight: normal;
+  }
+
+  .docsHeader {
+    display: block;
+    font-weight: bold;
+    border-bottom: 1px solid #efefef;
+    padding: 0 0 12px;
+    margin-bottom: 15px;
+    position: relative;
+  }
+
+  .bankLogo {
+    float: right;
+    width: auto;
+    height: 22px;
+    margin: 4px 4px 4px 20px;
+  }
+
+  .bankName {
+    float: right;
+    margin-left: 20px;
+  }
+
+  .label {
+    position: relative;
+    color: #000c17;
+    margin-bottom: 2px;
+    display: block;
+  }
+}
+
+.checkSheba {
+  display: block;
+  height: 32px;
+  line-height: 32px;
+}
+
+.bankInfoRow {
+  &:last-child :global(.ant-divider) {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+.address_item_mBottom {
+  margin-bottom: 10px;
+}

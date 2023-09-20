@@ -1,0 +1,6 @@
+{
+  "name": "OpportunitiesCol",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./OpportunitiesCol.js"
+}

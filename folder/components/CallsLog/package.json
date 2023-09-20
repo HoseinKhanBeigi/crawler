@@ -1,0 +1,6 @@
+{
+  "name": "CallsLog",
+  "version": "1.0.0",
+  "main": "./CallsLog.js",
+  "private": true
+}

@@ -1,0 +1,6 @@
+{
+  "name": "PreviewImage",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./PreviewImage.js"
+}

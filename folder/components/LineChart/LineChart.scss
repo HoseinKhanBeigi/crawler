@@ -1,0 +1,9 @@
+@import '../variables';
+
+:global(.ant-card) {
+  margin-bottom: 15px !important;
+}
+
+:global(.recharts-wrapper) {
+  direction: ltr;
+}

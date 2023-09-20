@@ -1,0 +1,25 @@
+@import '../../../variables';
+
+.delete {
+  margin-left: 9px;
+  font-size: 16px;
+  vertical-align: sub;
+}
+
+.content {
+  margin-bottom: 30px;
+  font-weight: 400;
+
+  small {
+    display: block;
+    margin: 4px 25px 25px 0;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .count {
+    color: #0d94f6;
+    font-size: 13px;
+    margin: 0 2px;
+  }
+}

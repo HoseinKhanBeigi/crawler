@@ -1,0 +1,72 @@
+@import '../../../variables';
+
+.searchBox {
+  transition: 0.3s;
+  margin-bottom: 16px;
+  border: none !important;
+
+  &:global(.invisible) {
+    opacity: 0;
+    margin-bottom: 0;
+  }
+
+  :global {
+    .searchButton {
+      padding-top: 29px !important;
+
+      i {
+        font-size: 12px;
+      }
+
+      span {
+        margin-left: 0 !important;
+      }
+    }
+
+    .ant-collapse-header {
+      display: none;
+    }
+
+    .ant-collapse {
+      border-radius: 5px !important;
+    }
+
+    .ant-collapse-extra {
+      i {
+        font-size: 20px;
+        padding-left: 10px;
+        color: rgb(154, 154, 154);
+        transition: 0.3s;
+      }
+    }
+
+    .ant-collapse-content {
+      border: none;
+      border-radius: 0 !important;
+    }
+
+    .ant-collapse-content-box {
+      small {
+        color: rgb(117, 117, 117);
+        line-height: 2.3;
+      }
+    }
+
+    .ant-collapse-item-active .ant-collapse-extra i {
+      color: rgb(72, 72, 72);
+      font-size: 23px;
+    }
+  }
+}
+
+.wrapper {
+  :global {
+    .ant-input-suffix {
+      left: 10px !important;
+    }
+
+    .selectInput {
+      margin: 0 !important;
+    }
+  }
+}

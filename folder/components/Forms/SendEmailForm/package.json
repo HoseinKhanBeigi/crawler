@@ -1,0 +1,6 @@
+{
+  "name": "SendEmailForm",
+  "version": "0.0.0",
+  "private": true,
+  "main": "SendEmailForm.js"
+}

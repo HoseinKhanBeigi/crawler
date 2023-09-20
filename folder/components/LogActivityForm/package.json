@@ -1,0 +1,6 @@
+{
+  "name": "LogActivityForm",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./LogActivityForm.js"
+}

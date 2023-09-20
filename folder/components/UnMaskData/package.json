@@ -1,0 +1,6 @@
+{
+  "name": "UnMaskData",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./UnMaskData.js"
+}

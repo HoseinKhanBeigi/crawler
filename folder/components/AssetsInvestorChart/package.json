@@ -1,0 +1,7 @@
+{
+    "name": "AssetsInvestorChart",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./AssetsInvestorChart.js"
+  }
+  

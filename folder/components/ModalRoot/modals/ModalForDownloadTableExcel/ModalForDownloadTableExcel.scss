@@ -1,0 +1,15 @@
+.root {
+  :global {
+    .DateRangePickerInput {
+      border: none;
+
+      .DateInput {
+        min-width: 150px;
+      }
+
+      .DateRangePickerInput__arrow {
+        padding: 0 10px;
+      }
+    }
+  }
+}

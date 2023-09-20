@@ -1,0 +1,11 @@
+.navigation {
+  padding: 0 0 12px;
+  border-bottom: solid 1px #f0f0f0;
+  margin-bottom: 12px;
+
+  :global {
+    .ant-steps-icon {
+      font-family: 'iranyekan', sans-serif;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@import '../../variables';
+
+.CPInputGroup {
+  display: flex !important;
+
+  > * + > * {
+    border-right-width: 0;
+  }
+
+  > *:first-child {
+    border-right-width: 1px !important;
+  }
+
+  input {
+    width: auto;
+    flex: auto;
+  }
+}

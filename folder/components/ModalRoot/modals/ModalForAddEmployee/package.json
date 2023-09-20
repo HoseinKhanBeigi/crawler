@@ -1,0 +1,6 @@
+{
+  "name": "ModalForAddEmployee",
+  "version": "1.0.0",
+  "main": "./ModalForAddEmployee.js",
+  "private": true
+}

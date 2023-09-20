@@ -1,0 +1,6 @@
+{
+  "name": "ModalForSendGroupSms",
+  "version": "0.0.0",
+  "private": true,
+  "main": "ModalForSendGroupSms.js"
+}
