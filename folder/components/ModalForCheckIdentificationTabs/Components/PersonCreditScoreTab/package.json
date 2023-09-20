@@ -1,6 +1,0 @@
-{
-    "name": "PersonCreditScoreTab",
-    "version": "0.0.0",
-    "private": true,
-    "main": "./PersonCreditScoreTab.js"
-}

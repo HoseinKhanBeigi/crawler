@@ -1,6 +1,0 @@
-{
-  "name": "CheckIdentificationTabsDocuments",
-  "version": "0.0.0",
-  "private": true,
-  "main": "./CheckIdentificationTabsDocuments.js"
-}

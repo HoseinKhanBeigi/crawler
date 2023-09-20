@@ -1,6 +1,0 @@
-{
-  "name": "unknowncallinfonotification",
-  "version": "0.0.0",
-  "private": true,
-  "main": "./UnknownCallInfoNotification.js"
-}

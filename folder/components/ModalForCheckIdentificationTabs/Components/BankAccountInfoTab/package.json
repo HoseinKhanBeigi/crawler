@@ -1,6 +1,0 @@
-{
-  "name": "BankAccountInfoTab",
-  "version": "0.0.0",
-  "private": true,
-  "main": "./BankAccountInfoTab.js"
-}

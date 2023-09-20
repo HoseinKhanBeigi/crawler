@@ -1,6 +1,0 @@
-{
-    "name": "ProductEmployeeObserver",
-    "version": "1.0.0",
-    "main": "./ProductEmployeeObserver.js",
-    "private": true
-  }  

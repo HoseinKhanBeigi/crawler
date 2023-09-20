@@ -1,6 +1,0 @@
-{
-  "name": "CrmActivityTable",
-  "version": "0.0.0",
-  "private": true,
-  "main": "./CrmActivityTable.js"
-}

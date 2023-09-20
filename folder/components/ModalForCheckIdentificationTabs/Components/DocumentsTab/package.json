@@ -1,7 +1,0 @@
-{
-    "name": "DocumentsTab",
-    "version": "0.0.0",
-    "private": true,
-    "main": "./DocumentsTab.js"
-  }
-  

@@ -2,8 +2,9 @@ const fs = require("fs");
 const path = require("path");
 
 function extractWordsFromCode(code) {
-  const functionRegex = /(function\s+(\w+)\s*\([^)]*\)|const\s+(\w+)\s*=\s*\([^)]*\)\s*=>)/g;
-  
+  const functionRegex =
+    /(function\s+(\w+)\s*\([^)]*\)|const\s+(\w+)\s*=\s*\([^)]*\)\s*=>)/g;
+
   // Find function names
   const functionNames = [];
   let match;
@@ -15,9 +16,7 @@ function extractWordsFromCode(code) {
       functionNames.push(`${match[3]}`);
     }
   }
-  
 
-  
   const componentNames = code.match(/<(?:[A-Z]\w+|\/[A-Z]\w+)>/g) || [];
   return {
     functions: functionNames,
@@ -25,41 +24,35 @@ function extractWordsFromCode(code) {
   };
 }
 
-function parseTextToStructure2(lines) {
+function parseTextToStructure(lines) {
+  // console.log(lines, "line");
   const result = {};
   let currentComponent = null;
-  if (Array.isArray(lines)) {
-    for (const line of lines) {
-      const componentName = line;
-      if (componentName) {
-        if (currentComponent === null) {
-          currentComponent = componentName;
-          result[currentComponent] = {};
-        } else {
-          result[currentComponent][componentName] = {};
-        }
-      }
-    }
-  } else {
-    const componentName = lines;
-    console.log(componentName)
-    if (componentName.functions) {
-      if (currentComponent === null) {
-        currentComponent = componentName.functions[0];
-        result[currentComponent] = {};
-      } else {
-        result[currentComponent][componentName] = componentName.components;
-      }
+  let currentComponent2 = null
+
+  const componentName = lines;
+  if (componentName.functions) {
+    if (currentComponent === null) {
+      currentComponent = componentName.functions;
+      // console.log(currentComponent)
+      result[currentComponent] = {};
     } else {
-      if (currentComponent === null) {
-        currentComponent = componentName;
-        result[currentComponent] = {};
-      } else {
-        result[currentComponent][componentName] = {};
-      }
+      result[currentComponent][componentName] = {};
+    }
+  }
+  if (componentName.components) {
+    if (currentComponent2 === null) {
+      // console.log(componentName.components,"componentName.components")
+      currentComponent2 = componentName.components;
+      // console.log(currentComponent2)
+      result[currentComponent2] = {};
+    } else {
+      result[currentComponent2][componentName] = {};
     }
   }
 
+
+  console.log(result,"res")
   return result;
 }
 
@@ -73,14 +66,16 @@ function processFilesInFolder(folderPath) {
 
     if (stats.isFile()) {
       const fileContent = fs.readFileSync(filePath, "utf8");
+
       const extractedWords = extractWordsFromCode(fileContent);
 
-      const objectRepresentation = parseTextToStructure2(extractedWords);
+      const objectRepresentation = parseTextToStructure(extractedWords);
       if (Object.keys(objectRepresentation).length > 0) {
         result[file] = objectRepresentation;
       }
     }
   });
+
 
   return result;
 }
@@ -120,13 +115,15 @@ if (require.main === module) {
   const rootDirectory = "./folder";
   const folderData = buildFolderData(rootDirectory);
   function convertJsonToFormat(json) {
+    // console.log(json,"json")
     const result = [];
 
     for (const key in json) {
       if (json.hasOwnProperty(key)) {
-        
         const obj = { name: key, children: [] };
         const child = json[key];
+
+        // console.log(child,"chidl")
 
         if (typeof child === "object" && Object.keys(child).length > 0) {
           obj.children = convertJsonToFormat(child);

@@ -1,6 +1,0 @@
-{
-  "name": "SetPasswordForm",
-  "version": "0.0.0",
-  "private": true,
-  "main": "./SetPasswordForm.js"
-}

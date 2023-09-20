@@ -1,6 +1,0 @@
-{
-    "name": "LegalCreditScoreTab",
-    "version": "0.0.0",
-    "private": true,
-    "main": "./LegalCreditScoreTab.js"
-}

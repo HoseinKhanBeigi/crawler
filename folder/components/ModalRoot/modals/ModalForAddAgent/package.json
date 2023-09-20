@@ -1,7 +1,0 @@
-{
-    "name": "ModalForAddAgent",
-    "version": "1.0.0",
-    "main": "./ModalForAddAgent.js",
-    "private": true
-  }
-  
