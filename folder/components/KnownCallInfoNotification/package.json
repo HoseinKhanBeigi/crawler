@@ -1,0 +1,6 @@
+{
+  "name": "KnownCallInfoNotification",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./KnownCallInfoNotification.js"
+}

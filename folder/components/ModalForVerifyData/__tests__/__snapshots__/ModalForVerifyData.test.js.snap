@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ModalForVerifyData Test should render children when passed in 1`] = `undefined`;

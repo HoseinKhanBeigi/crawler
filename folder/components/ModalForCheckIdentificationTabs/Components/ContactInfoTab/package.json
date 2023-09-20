@@ -1,0 +1,6 @@
+{
+  "name": "ContactInfoTab",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./ContactInfoTab.js"
+}

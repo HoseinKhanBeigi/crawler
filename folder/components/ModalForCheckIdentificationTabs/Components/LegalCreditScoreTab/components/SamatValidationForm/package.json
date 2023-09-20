@@ -1,0 +1,6 @@
+{
+    "name": "SamatValidationForm",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./SamatValidationForm.js"
+}

@@ -1,0 +1,5 @@
+@import '../../variables.scss';
+
+:global(.ant-collapse-header) {
+  padding: 8px 10px !important;
+}

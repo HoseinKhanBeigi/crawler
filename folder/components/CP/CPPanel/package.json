@@ -1,0 +1,6 @@
+{
+  "name": "CPPanel",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./CPPanel.js"
+}

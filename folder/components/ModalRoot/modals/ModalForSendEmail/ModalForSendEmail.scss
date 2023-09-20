@@ -1,0 +1,23 @@
+.root {
+  :global {
+    .ant-collapse-header {
+      color: red !important;
+    }
+
+    .ant-collapse-content-box {
+      max-height: 100px;
+      overflow-y: scroll;
+      padding: 8px 16px;
+      line-height: 1.7;
+      font-size: 12px;
+
+      ul {
+        padding: 0;
+
+        ol {
+          padding: 0;
+        }
+      }
+    }
+  }
+}

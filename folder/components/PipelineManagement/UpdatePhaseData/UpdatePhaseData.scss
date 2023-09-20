@@ -1,0 +1,17 @@
+.submitButton {
+  margin-top: 24px;
+  align-items: flex-end;
+
+  span {
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+
+.startFormButtonWrapper {
+  display: flex;
+  justify-content: flex-end;
+  bottom: 16px;
+  margin: auto;
+  width: 100%;
+}

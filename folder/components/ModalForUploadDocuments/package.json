@@ -1,0 +1,6 @@
+{
+  "name": "ModalForUploadDocuments",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./ModalForUploadDocuments.js"
+}

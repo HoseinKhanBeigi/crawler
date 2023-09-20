@@ -1,0 +1,6 @@
+{
+  "name": "windowontopfixed",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./WindowOnTopFixed.js"
+}

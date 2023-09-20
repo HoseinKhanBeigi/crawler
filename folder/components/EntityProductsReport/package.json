@@ -1,0 +1,6 @@
+{
+  "name": "EntityProductsReport",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./EntityProductsReport.js"
+}

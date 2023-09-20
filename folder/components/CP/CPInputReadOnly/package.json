@@ -1,0 +1,6 @@
+{
+  "name": "CPInputReadOnly",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./CPInputReadOnly.js"
+}

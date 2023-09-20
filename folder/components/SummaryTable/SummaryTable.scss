@@ -1,0 +1,49 @@
+.header {
+  display: flex;
+  padding: 0 16px;
+  justify-content: space-between;
+
+  h3 {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__totalElements {
+    display: inline-block;
+    background-color: #1890ff;
+    margin-right: 8px;
+    color: white;
+    padding: 4px 6px;
+    border-radius: 50%;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+    min-width: 24px;
+  }
+
+  &__linkButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    background-color: #edf6ff;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 2px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.tableWrapper {
+  & > div {
+    padding: 16px;
+  }
+}

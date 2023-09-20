@@ -1,0 +1,14 @@
+.table {
+  margin-bottom: 8px;
+
+  :global {
+    .ant-table-thead {
+      background-color: #fafafa;
+      font-size: 12px;
+    }
+
+    .ant-table-tbody {
+      font-size: 12px;
+    }
+  }
+}

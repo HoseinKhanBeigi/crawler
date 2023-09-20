@@ -1,0 +1,16 @@
+.empty{
+    text-align: center;
+    color: #aaadb5;
+}
+    :global{
+    .ant-tag{
+        padding: 3px 6px 4px;
+        border-radius: 16px;
+        font-size: 14px;
+    }
+}
+.footer{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 28px;
+}

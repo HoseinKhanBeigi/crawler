@@ -1,0 +1,35 @@
+@import '../variables';
+
+.formBankVerification {
+  :global(.ant-input-number) {
+    width: 100%;
+  }
+
+  :global(.col-md-12.actions-col) {
+    margin-top: 30px !important;
+  }
+
+  :global(.bank-form-row .col-md-12) {
+    margin-top: 15px;
+  }
+
+  :global(.bank-form-row .ant-form-item-children) {
+    display: flex;
+  }
+
+  :global(.bank-form-row .ant-form-item-children span) {
+    width: 100px;
+  }
+
+  :global(.bank-form-row .ant-form-item-children .inline) {
+    width: 100%;
+  }
+
+  :global(.bank-form-row .ant-form-item-children .inlineInput) {
+    width: 100%;
+  }
+
+  :global(.bank-form-row .ant-form-item-children span.ant-select-arrow) {
+    width: unset;
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "FormGenerator",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./FormGenerator.js"
+}

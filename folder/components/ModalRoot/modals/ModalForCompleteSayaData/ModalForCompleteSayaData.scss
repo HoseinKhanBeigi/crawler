@@ -1,0 +1,37 @@
+.hint {
+  margin-bottom: 20px;
+  font-size: 12px;
+  margin-top: -20px;
+  color: #8a8a8a;
+
+  strong {
+    color: #3e3e3e;
+    font-weight: 600;
+    font-size: 14px;
+  }
+}
+
+.tabButton {
+  margin-bottom: 5px;
+}
+
+.tabImage {
+  height: 119px;
+  text-align: center;
+
+  img {
+    height: 100%;
+    transition: 0.2s;
+
+    &:hover {
+      transform: scale(1.1);
+      cursor: zoom-in;
+    }
+  }
+}
+
+.alert {
+  font-size: 11px;
+  margin-top: -17px;
+  margin-bottom: 8px;
+}

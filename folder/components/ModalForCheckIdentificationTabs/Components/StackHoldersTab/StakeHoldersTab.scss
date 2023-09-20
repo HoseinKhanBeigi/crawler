@@ -1,0 +1,55 @@
+.card_contaienr {
+  :global {
+    .ant-tabs .ant-tabs-right-bar {
+      width: 200px;
+    }
+
+    .ant-tabs-nav .ant-tabs-tab-active {
+      background: #1c92ff;
+      color: #fff;
+      border-radius: 4px;
+    }
+  }
+}
+
+.icon_tab {
+  width: 16px;
+  height: 16px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 10px;
+}
+
+.tab_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  direction: rtl;
+}
+
+.tab_name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.radioBox {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  font-weight: normal;
+}
+
+.docsHeader {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  color: #101010;
+  font-size: 14px;
+  border-bottom: 1px solid #efefef;
+  padding: 0 0 12px;
+  margin-bottom: 15px;
+  position: relative;
+}

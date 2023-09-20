@@ -1,0 +1,6 @@
+{
+  "name": "CollateralInfoDocs",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./CollateralInfoDocs.js"
+}

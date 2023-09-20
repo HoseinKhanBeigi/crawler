@@ -1,0 +1,6 @@
+{
+  "name": "TagCard",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./TagCard.js"
+}

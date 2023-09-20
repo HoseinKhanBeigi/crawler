@@ -1,0 +1,16 @@
+@import '../variables';
+
+.mb {
+  margin: 10px 0 25px;
+  font-weight: normal;
+}
+
+.popOver {
+  padding: 10px 0;
+
+  button {
+    & + button {
+      margin-right: 10px;
+    }
+  }
+}

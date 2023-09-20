@@ -1,0 +1,5 @@
+@import '../../variables.scss';
+
+:global(.ant-input-number) {
+  width: 100%;
+}

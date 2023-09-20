@@ -1,0 +1,42 @@
+.container {
+  min-height: 300px;
+  height: 100%;
+  display: flex;
+  padding: 40px 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 100%;
+  max-width: 800px;
+  padding: 12px 0;
+  border-radius: 4px;
+  box-shadow: 0 9px 28px 0 rgba(0, 0, 0, 0.05);
+  background-color: rgb(255, 255, 255);
+}
+
+.stepsComponent {
+  padding-top: 12px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: normal;
+  color: rgb(38, 38, 38);
+  padding: 0 24px;
+}
+
+.hr {
+  width: 100%;
+  height: 1px;
+  background-color: rgb(240, 240, 240);
+}
+
+.steps {
+  width: 100%;
+  max-width: 75%;
+  margin: 0 auto;
+  margin-top: 12px;
+  margin-bottom: 8px;
+}

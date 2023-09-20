@@ -1,0 +1,7 @@
+{
+    "name": "ActionColumn",
+    "version": "1.0.0",
+    "private": true,
+    "main": "./ActionColumn.js"
+  }
+  

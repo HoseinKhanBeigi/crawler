@@ -1,0 +1,26 @@
+.form {
+  :global(.ant-form-explain) {
+    font-size: 12px;
+    margin-top: 2px;
+    font-weight: 400;
+  }
+
+  :global(.row) {
+    height: 75px !important;
+  }
+
+  :global(.has-error.has-feedback) :global(.ant-form-item-children-icon),
+  :global(.has-success.has-feedback) :global(.ant-form-item-children-icon),
+  :global(.has-warning.has-feedback) :global(.ant-form-item-children-icon),
+  :global(.is-validating.has-feedback) :global(.ant-form-item-children-icon) {
+    top: 44px !important;
+    left: 5px !important;
+  }
+}
+
+.labels {
+  margin: 5px 0;
+  display: inline-block;
+  color: #000c17;
+  line-height: 18px;
+}

@@ -1,0 +1,19 @@
+@import '../../../variables';
+
+.root {
+  .radioBox {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    font-weight: normal;
+  }
+
+  .docsHeader {
+    display: block;
+    font-weight: bold;
+    border-bottom: 1px solid #efefef;
+    padding: 0 0 12px;
+    margin-bottom: 15px;
+    position: relative;
+  }
+}

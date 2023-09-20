@@ -1,0 +1,14 @@
+@import '../../../variables';
+
+:global {
+  .ant-input-number {
+    width: 100%;
+    border-radius: 1px;
+  }
+}
+
+.activeStatus {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}

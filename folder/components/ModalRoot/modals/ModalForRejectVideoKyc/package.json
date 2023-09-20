@@ -1,0 +1,7 @@
+{
+    "name": "ModalForRejectVideoKyc",
+    "version": "1.0.0",
+    "main": "./ModalForRejectVideoKyc.js",
+    "private": true
+  }
+  

@@ -1,0 +1,26 @@
+@import '../../variables.scss';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+
+  .selectContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    height: 49px;
+    border-bottom: 1px solid  #dadde1;
+    padding: 8px 24px;
+
+    .selectBox {
+      width: 193px;
+      border-color: #f4f5f7 !important;
+    }
+  }
+}

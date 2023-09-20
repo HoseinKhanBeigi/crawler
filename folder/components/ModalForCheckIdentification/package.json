@@ -1,0 +1,6 @@
+{
+  "name": "ModalForCheckIdentification",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./ModalForCheckIdentification.js"
+}

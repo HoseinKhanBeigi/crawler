@@ -1,0 +1,6 @@
+{
+  "name": "OutgoingCallInfoNotification",
+  "version": "1.0.0",
+  "main": "./OutgoingCallInfoNotification.js",
+  "private": true
+}

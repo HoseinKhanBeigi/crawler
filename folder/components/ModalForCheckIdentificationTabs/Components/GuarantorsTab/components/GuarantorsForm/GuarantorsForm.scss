@@ -1,0 +1,22 @@
+@import '../../../../../variables';
+
+.root {
+  .additionalInfo {
+    padding: 0 10px;
+  }
+
+  .input {
+    margin-bottom: 15px;
+  }
+}
+
+.docsHeader {
+  font-weight: bold;
+  color: #101010;
+  font-size: 14px;
+  border-bottom: 1px solid #efefef;
+  padding: 0 0 12px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  position: relative;
+}

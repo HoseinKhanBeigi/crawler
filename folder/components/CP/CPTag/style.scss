@@ -1,0 +1,29 @@
+@import '../../variables';
+
+.cpTag {
+  box-sizing: border-box;
+  margin: 0 8px 0 0;
+  list-style: none;
+  display: inline-block;
+  height: auto;
+  padding: 0 7px;
+  font-size: 12px;
+  line-height: 20px;
+  white-space: nowrap;
+  color: #f2f2f2f2;
+  border-color: transparent;
+  border-radius: 4px;
+  cursor: default;
+  transition: all 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+}
+
+.cpTag_icon {
+  margin-right: 5px;
+  margin-top: 5px;
+  float: left;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.61);
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-block;
+}

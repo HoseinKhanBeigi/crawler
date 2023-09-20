@@ -1,0 +1,11 @@
+@import '../variables';
+
+.root {
+  margin-right: -16px !important;
+
+  :global {
+    .ant-tabs-content {
+      min-height: 400px;
+    }
+  }
+}

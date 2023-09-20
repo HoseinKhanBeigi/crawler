@@ -1,0 +1,21 @@
+@import '../../variables';
+
+:global {
+  .rtlLayout {
+    .ant-badge-status-text {
+      margin-left: 0;
+      margin-right: 8px;
+    }
+
+    .ant-badge {
+      .ant-badge-dot {
+        transform: translateX(50%);
+        right: 0;
+      }
+    }
+  }
+
+  .ant-badge-count {
+    box-shadow: none;
+  }
+}

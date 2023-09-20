@@ -1,0 +1,6 @@
+{
+  "name": "CollateralInfoTab",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./CollateralInfoTab.js"
+}

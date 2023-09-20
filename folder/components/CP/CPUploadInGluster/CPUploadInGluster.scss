@@ -1,0 +1,11 @@
+@import '../../variables';
+
+.cPUploadInGluster {
+  display: flex;
+  flex-direction: row-reverse;
+
+  :global(.ant-upload-list) {
+    flex: 1;
+    margin-left: 5px;
+  }
+}

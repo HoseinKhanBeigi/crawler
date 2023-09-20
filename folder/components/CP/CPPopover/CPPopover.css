@@ -1,0 +1,6 @@
+@import '../../variables.scss';
+
+:global(.ant-popover) {
+  font-size: 12px;
+  text-align: right;
+}

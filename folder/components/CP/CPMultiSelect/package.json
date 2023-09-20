@@ -1,0 +1,6 @@
+{
+  "name": "CPMultiSelect",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./CPMultiSelect.js"
+}

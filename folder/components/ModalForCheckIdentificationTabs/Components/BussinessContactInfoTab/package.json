@@ -1,0 +1,6 @@
+{
+  "name": "BussinessContactInfoTab",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./BussinessContactInfoTab.js"
+}

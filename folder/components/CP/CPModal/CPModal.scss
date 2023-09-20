@@ -1,0 +1,114 @@
+@import '../../variables';
+
+:global(.fullWidthModal) {
+  position: fixed;
+  width: 100% !important;
+  height: 100% !important;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 0;
+
+  :global(.ant-modal-content) {
+    height: 100%;
+  }
+}
+
+.root {
+  :global(.ant-modal-wrap) {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-x: hidden;
+  }
+
+  :global(.ant-modal-close) {
+    left: 0;
+    right: auto;
+  }
+
+  :global(.ant-modal-footer) {
+    text-align: right;
+
+    :global(.ant-btn-primary) {
+      float: right;
+    }
+  }
+
+  &:global(.min_modal) :global(.ant-modal-close-x) {
+    height: 47px;
+    line-height: 47px;
+    color: #c4c4c4;
+  }
+
+  &:global(.notClosable) {
+    :global(.ant-modal-close) {
+      display: none;
+      visibility: hidden;
+    }
+  }
+
+  &:global(.max_modal) :global(.ant-modal) {
+    position: fixed;
+    margin: 0;
+    width: 100% !important;
+    height: 100%;
+    padding: 0;
+    top: 0;
+    overflow-x: hidden;
+  }
+
+  &:global(.max_modal) :global(.ant-modal-footer) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+    padding: 14px 16px;
+    background: #fff;
+    text-align: left;
+  }
+
+  &:global(.max_modal) :global(.ant-modal-content) {
+    position: absolute;
+    top: 0;
+    right: 60px;
+    bottom: 0;
+    left: 0;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  &:global(.max_modal) :global(.ant-modal-header) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: #1890ff;
+    border: 0;
+    border-radius: 0;
+    z-index: 2;
+  }
+
+  &:global(.max_modal) :global(.ant-modal-close) {
+    color: #fff;
+  }
+
+  &:global(.max_modal) :global(.ant-modal-title) {
+    font-size: 1.3em;
+    color: #fff;
+    line-height: 30px;
+  }
+
+  &:global(.max_modal) :global(.ant-modal-body) {
+    position: absolute;
+    top: 50px;
+    bottom: 60px;
+    width: 100%;
+    font-weight: 300;
+  }
+}

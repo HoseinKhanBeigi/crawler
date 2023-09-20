@@ -1,0 +1,80 @@
+@import '../../../variables';
+
+.root {
+  padding: 0 20px 5px;
+  min-height: calc(100% - 20px);
+  position: relative;
+
+  .buttonMargin {
+    button {
+      margin: 0 13px;
+
+      span {
+        min-width: 68px !important;
+        max-width: 68px;
+      }
+    }
+  }
+
+  .additionalInfo {
+    & > div {
+      margin-bottom: 10px;
+
+      span:first-child {
+        min-width: 106px;
+      }
+    }
+  }
+
+  .OTPSection {
+    margin-top: 30px;
+    border: 1px solid #efefef;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+
+    .tradeCode {
+      display: flex;
+      flex-direction: row;
+      margin-left: 8px;
+      width: 304px;
+      padding-right: 9px;
+    }
+
+    .tradCodeStatus {
+      display: flex;
+      flex-direction: column;
+      width: 180px;
+      margin: 20px auto 10px auto;
+      text-align: center;
+
+      button {
+        margin: 5px 0;
+      }
+
+      div {
+        font-size: 10px;
+        font-weight: normal;
+        line-height: 1.5;
+        color: darkred;
+      }
+    }
+
+    .CountDownTimer {
+      margin: 5px 0 10px 0;
+    }
+  }
+
+  .textError {
+    color: darkred;
+  }
+
+  .textSuccess {
+    color: green;
+  }
+
+  .message {
+    font-size: 12px;
+    margin-top: 15px;
+  }
+}

@@ -1,0 +1,31 @@
+.selfi_pic_title {
+  font-size: 14px;
+  color: #3b556d;
+  font-weight: 800;
+}
+
+.mdiIconContainer {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 21px;
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.16);
+  border: solid 2px #178ffe;
+  background-color: #fff;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  .compareAction {
+    color: #178ffe;
+  }
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}

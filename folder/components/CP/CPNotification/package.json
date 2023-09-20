@@ -1,0 +1,6 @@
+{
+  "name": "CPNotification",
+  "version": "1.1.1",
+  "private": true,
+  "main": "./CPNotification.js"
+}

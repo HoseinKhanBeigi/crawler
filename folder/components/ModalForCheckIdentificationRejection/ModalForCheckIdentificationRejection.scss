@@ -1,0 +1,23 @@
+@import '../variables';
+
+.root {
+  margin-right: 143px;
+  padding: 20px;
+
+  .docsHeader {
+    display: block;
+    font-weight: bold;
+    border-bottom: 1px solid #efefef;
+    padding: 0 0 12px;
+    margin-bottom: 15px;
+    position: relative;
+  }
+
+  .spacer {
+    padding: 15px;
+  }
+
+  .wrapper {
+    min-height: 100px;
+  }
+}

@@ -1,0 +1,6 @@
+{
+    "name": "OrganizationInfoStep",
+    "version": "1.0.0",
+    "main": "./OrganizationInfoStep.js",
+    "private": true
+  }  

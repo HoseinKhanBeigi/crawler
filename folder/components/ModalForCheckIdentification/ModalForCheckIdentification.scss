@@ -1,0 +1,32 @@
+@import '../variables';
+
+.modalForCheckIdentification {
+  width: calc(100vw - 110px) !important;
+
+  :global {
+    .ant-modal-content {
+      margin: 0 auto;
+      transform: translateX(-22.5px);
+      max-width: 1024px;
+    }
+
+    .ant-modal-body {
+      padding: 0 !important;
+    }
+  }
+}
+
+.navTo {
+  height: 32px;
+  color: #fff;
+  padding: 5px 16px;
+  background-color: #1c92ff;
+
+  b {
+    text-decoration: underline;
+  }
+
+  a {
+    color: #fff;
+  }
+}

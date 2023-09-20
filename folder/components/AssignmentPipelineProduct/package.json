@@ -1,0 +1,6 @@
+{
+  "name": "AssignmentPipelineProduct",
+  "version": "1.0.0",
+  "main": "./AssignmentPipelineProduct.js",
+  "private": true
+}

@@ -1,0 +1,6 @@
+{
+  "name": "CPDateRangePicker",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./CPDateRangePicker.js"
+}

@@ -1,0 +1,7 @@
+@import '../../variables.scss';
+
+.controlLabel {
+  margin: 5px;
+  display: inline-block;
+  color: #000c17;
+}

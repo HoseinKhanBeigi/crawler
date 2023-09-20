@@ -1,0 +1,23 @@
+.desc_container {
+  padding: 12px;
+  border-radius: 4px;
+  border: solid 1px #e1e1e1;
+  background-color: #fbfbfb;
+  margin: 8px 0 16px;
+
+  :global {
+    .ant-descriptions-row > td,
+    .ant-descriptions-row > th {
+      padding-bottom: 4px;
+    }
+  }
+}
+
+.label {
+  :global {
+    .ant-descriptions-item-label {
+      font-size: 12px;
+      color: rgba(99, 99, 99, 0.65);
+    }
+  }
+}

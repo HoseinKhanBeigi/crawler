@@ -1,0 +1,6 @@
+{
+  "name": "CPBadge",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./CPBadge.js"
+}
