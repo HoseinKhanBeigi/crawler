@@ -49,3 +49,8 @@ function App() {
 }
 
 export default App;
+
+// algoritmi
+// sabtenam online
+// haghighi kham
+// hoghoghi kamel
