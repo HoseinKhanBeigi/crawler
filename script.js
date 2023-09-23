@@ -27,32 +27,17 @@ function extractWordsFromCode(code) {
 function parseTextToStructure(lines) {
   // console.log(lines, "line");
   const result = {};
-  let currentComponent = null;
-  let currentComponent2 = null
+  let currentComponent = result;
 
   const componentName = lines;
-  if (componentName.functions) {
-    if (currentComponent === null) {
-      currentComponent = componentName.functions;
-      // console.log(currentComponent)
-      result[currentComponent] = {};
-    } else {
-      result[currentComponent][componentName] = {};
-    }
-  }
-  if (componentName.components) {
-    if (currentComponent2 === null) {
-      // console.log(componentName.components,"componentName.components")
-      currentComponent2 = componentName.components;
-      // console.log(currentComponent2)
-      result[currentComponent2] = {};
-    } else {
-      result[currentComponent2][componentName] = {};
-    }
+  if (componentName) {
+    currentComponent[componentName] = {};
+    currentComponent = currentComponent[componentName];
+  } else {
+    currentComponent = result; // Move back to the root component
   }
 
-
-  console.log(result,"res")
+  // console.log(result, "res");
   return result;
 }
 
@@ -70,12 +55,14 @@ function processFilesInFolder(folderPath) {
       const extractedWords = extractWordsFromCode(fileContent);
 
       const objectRepresentation = parseTextToStructure(extractedWords);
-      if (Object.keys(objectRepresentation).length > 0) {
-        result[file] = objectRepresentation;
+
+      if (Object.keys(extractedWords).length > 0) {
+        result[file] = extractedWords;
       }
     }
   });
 
+  console.log(result);
 
   return result;
 }
