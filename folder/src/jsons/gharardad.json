@@ -10,6 +10,7 @@
   "pages": [
     {
       "id": 1,
+      "sign": true,
       "entities": [
         {
           "title": "",
@@ -158,6 +159,7 @@
     },
     {
       "id": 2,
+      "sign": true,
       "entities": [
         {
           "title": "",

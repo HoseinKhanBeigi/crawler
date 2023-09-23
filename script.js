@@ -110,8 +110,6 @@ if (require.main === module) {
         const obj = { name: key, children: [] };
         const child = json[key];
 
-        // console.log(child,"chidl")
-
         if (typeof child === "object" && Object.keys(child).length > 0) {
           obj.children = convertJsonToFormat(child);
         }
