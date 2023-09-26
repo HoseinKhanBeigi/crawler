@@ -1,31 +1,45 @@
 const express = require("express");
 const fs = require("fs");
+const mammoth = require("mammoth");
 
 const app = express();
 const port = 3001;
 
-app.get("/read", (req, res) => {
-  fs.readFile("data.json", "utf8", (err, data) => {
-    if (err) {
-      console.error(err);
-      res.status(500).send("Error reading file");
-    } else {
-      res.send(data);
-    }
-  });
-});
+const docxFilePath = "./test3.docx";
 
-app.post("/wirte", (req, res) => {
-  console.log(req);
-  //   const jsonString = JSON.stringify(formattedData, null, 2);
-  //   const filePath = "data.json";
-  //   try {
-  //     fs.writeFileSync(filePath, jsonString, "utf8");
-  //   } catch (err) {
-  //   }
-  res.send("Got a POST request");
-});
+// Read the DOCX file
+fs.readFile(docxFilePath, (err, data) => {
+  if (err) {
+    console.error("Error reading the file:", err);
+    return;
+  }
 
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+  // Convert the DOCX to HTML
+  mammoth
+    .extractRawText({ buffer: data })
+    .then((result) => {
+      // Extracted HTML content with Persian text
+      // const htmlContent = result.value;
+
+      const jsonData = {
+        content: result.value, // This assumes you want to store the text content.
+      };
+
+      const paragraphs = result.value.split("\n\n");
+
+      // Create an array of objects with the name property
+      const result1 = paragraphs.map((paragraph) => ({ name: paragraph }));
+      const jsonText = JSON.stringify(result1, null, 2);
+      // console.log(result);
+      fs.writeFile("output.json", jsonText, (writeErr) => {
+        if (writeErr) {
+          console.error("Error writing JSON file:", writeErr);
+        } else {
+          console.log("JSON data has been written to output.json");
+        }
+      });
+    })
+    .catch((error) => {
+      console.error("Error converting DOCX to HTML:", error);
+    });
 });
