@@ -55,20 +55,20 @@ p{
   margin-top: 80px;
 
 }
-.table{
-  width: 90%;
-  margin: auto;
-}
-.row{
-  display: flex;
-  justify-content: space-around;
-  border: 1px solid black;
-}
-.col{
+.table {
   display: flex;
   flex-direction: column;
-  border: solid 1px black;
-  width: 100%;
+  border: 1px solid #ccc;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
 }
 .col span{
   height: 30px;
