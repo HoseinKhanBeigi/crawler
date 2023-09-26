@@ -37,7 +37,7 @@ function parseTextToStructure(lines) {
     currentComponent = result; // Move back to the root component
   }
 
-  // console.log(result, "res");
+  console.log(result, "res");
   return result;
 }
 
@@ -55,6 +55,7 @@ function processFilesInFolder(folderPath) {
       const extractedWords = extractWordsFromCode(fileContent);
 
       const objectRepresentation = parseTextToStructure(extractedWords);
+      // console.log(objectRepresentation);
 
       if (Object.keys(extractedWords).length > 0) {
         result[file] = extractedWords;
