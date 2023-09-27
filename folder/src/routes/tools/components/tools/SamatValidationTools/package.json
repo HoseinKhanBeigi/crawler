@@ -1,0 +1,7 @@
+{
+    "name": "SamatValidationTools",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./SamatValidationTools.js"
+  }
+  

@@ -1,0 +1,40 @@
+.label {
+  font-size: 12px;
+  font-weight: normal;
+  margin-bottom: 4px;
+  color: rgba(99, 99, 99, 0.85);
+}
+
+.selectedContainer {
+  margin-bottom: 8px;
+}
+
+.select {
+  margin-left: 0 !important;
+  width: 100%;
+}
+
+.addContainer {
+  text-align: left;
+  margin-top: 16px;
+  border-bottom: 1px solid rgb(240, 240, 240);
+  padding-bottom: 16px;
+}
+
+.btn {
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.title {
+  font-size: 12px;
+  font-weight: 500;
+  color: #262626;
+  padding: 16px 0;
+}
+
+.tagList {
+  margin-right: -8px;
+  border-bottom: 1px solid rgb(240, 240, 240);
+  padding-bottom: 16px;
+}

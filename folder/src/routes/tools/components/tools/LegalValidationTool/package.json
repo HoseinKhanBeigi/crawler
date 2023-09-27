@@ -1,0 +1,7 @@
+{
+    "name": "LegalValidationTool",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./LegalValidationTool.js"
+  }
+  

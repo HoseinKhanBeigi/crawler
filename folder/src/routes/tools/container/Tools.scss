@@ -1,0 +1,21 @@
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.78;
+  letter-spacing: normal;
+  text-align: right;
+  color: #101010;
+  padding-left: 10px;
+}
+
+.selectContainer {
+  min-width: 250px;
+}
+
+.toolsContainer {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1.2em;
+}

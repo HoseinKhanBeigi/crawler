@@ -1,0 +1,83 @@
+@import '../../components/variables';
+
+.pagination {
+  margin: 15px;
+}
+
+.tel {
+  direction: ltr;
+  display: inline-block;
+}
+
+.btn {
+  margin: 0 5px;
+  display: inline-block;
+}
+
+.toolbar {
+  height: 47px;
+  padding: 0 15px;
+  line-height: 45px;
+  background: rgb(245, 245, 245);
+  border: solid 1px rgb(215, 215, 215);
+  border-radius: 5px;
+  margin-bottom: 8px;
+
+  .toolbarTitle {
+    line-height: 45px;
+    float: right;
+    margin-left: 15px;
+  }
+
+  .select_product {
+    float: right;
+    width: 220px;
+    margin-top: 7px;
+    margin-left: 10px;
+  }
+
+  .select {
+    float: right;
+  }
+}
+
+/*
+ Used to style delete person button
+*/
+.cancelIcon {
+  font-size: 17px;
+  color: $red-button;
+  transition: 0.3s ease color;
+  font-weight: normal;
+  cursor: pointer;
+  padding: 0 5px;
+
+  &:hover {
+    color: lighten($red-button, 10%);
+  }
+}
+
+.isolatedButton {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  outline: none;
+
+  &:hover {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    outline: none;
+  }
+
+  &:active {
+    outline: none;
+  }
+}
+
+.delete_opportunity_icon {
+  float: right !important;
+  padding-left: 5px;
+}

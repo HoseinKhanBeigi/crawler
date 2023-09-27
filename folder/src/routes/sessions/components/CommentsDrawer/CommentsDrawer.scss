@@ -1,0 +1,71 @@
+.commentDrawer {
+  :global {
+    .ant-drawer-content-wrapper {
+      height: calc(100vh) !important;
+    }
+
+    .ant-drawer-content {
+      height: 100%;
+      text-align: right;
+    }
+
+    .ant-drawer-header {
+      border-bottom: 1px solid #e8e8e8;
+    }
+
+    .ant-drawer-wrapper-body {
+      height: 100%;
+    }
+
+    .ant-drawer-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      max-height: calc(100% - 55px);
+    }
+
+    .ant-drawer-mask {
+      width: calc(100% + 180px);
+    }
+  }
+
+  .container {
+    padding: 24px 24px 12px 24px;
+    overflow-x: hidden;
+    flex-grow: 1;
+  }
+}
+
+.center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.input {
+  border-top: solid 1px #f0f0f0;
+  background-color: white;
+  padding: 24px 24px 12px 24px;
+  width: 100%;
+}
+
+.buttons {
+  margin-top: 12px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance:none) {
+    .commentDrawer {
+      :global {
+        .ant-drawer-mask {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,3 @@
+export const GET_GET_REQUEST = 'GET_GET_REQUEST';
+export const GET_GET_SUCCESS = 'GET_GET_SUCCESS';
+export const GET_GET_FAILURE = 'GET_GET_FAILURE';

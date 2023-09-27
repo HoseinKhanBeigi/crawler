@@ -1,0 +1,32 @@
+.container {
+  padding: 16px 24px;
+  border-radius: 4px;
+  border: solid 1px #e1e1e1;
+  background-color: #fbfbfb;
+  margin: 24px 0;
+}
+
+.key {
+  font-size: 12px;
+  color: #999;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.app {
+  margin: 4px 0 4px 8px;
+  display: inline-block;
+  padding: 4px 16px 4px 16px;
+  border-radius: 4px;
+  background-color: #fff;
+  font-size: 12px;
+  color: #7a7a7a;
+}
+
+.tag {
+  margin: 0 0 0 8px !important;
+}

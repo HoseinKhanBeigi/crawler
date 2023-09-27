@@ -1,0 +1,18 @@
+@import '../../components/variables';
+
+.root {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: #fff;
+}
+
+.error {
+  margin: 15px 0;
+}
+
+:global(.ant-spin-container),
+:global(.ant-spin-nested-loading) {
+  height: 100%;
+}

@@ -1,0 +1,21 @@
+.activeStatus {
+  height: 24px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  border: solid 1px #93efd2;
+  background-color: #effffa;
+  font-size: 12px;
+  font-weight: normal;
+  color: #13c29a;
+  max-width: 38px;
+  display: flex;
+  justify-content: center;
+}
+
+.inactiveStatus {
+  border: solid 1px #ffa8a8;
+  background-color: #ffe9e9;
+  color: #ff5252;
+  max-width: 54px;
+  @extend.activeStatus;
+}

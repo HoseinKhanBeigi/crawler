@@ -1,0 +1,12 @@
+.container {
+  & > div {
+    min-height: 30px;
+    align-items: center;
+    margin: unset;
+    padding: 4px 12px;
+  }
+
+  & > div:nth-child(even) {
+    background-color: #fafafa;
+  }
+}

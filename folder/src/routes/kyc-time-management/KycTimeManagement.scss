@@ -1,0 +1,152 @@
+@import '../../components/variables';
+
+.kyc {
+  display: block;
+  width: 100%;
+}
+
+.noData {
+  :global(.ant-empty) {
+    background: #fff;
+    padding: 15px;
+    margin: 15px;
+    border: 1px solid #ddd;
+  }
+}
+
+.schedule {
+  position: relative;
+  height: 100%;
+  padding: 15px;
+  display: flex;
+
+  .timeManagement {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cards {
+    display: flex;
+    flex: 1;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    min-height: 320px;
+    animation: fadein 0.3s ease-in-out;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 7px;
+    min-width: 220px;
+  }
+
+  .times {
+    border-radius: 2px;
+    padding: 5px 0 5px;
+    text-align: center;
+    margin-bottom: 7px;
+    background-color: #eee;
+    color: #000;
+    border: 1px solid #ccc;
+    position: relative;
+
+    i {
+      font-size: 16px;
+    }
+
+    .edit {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      padding: 3px;
+      cursor: pointer;
+      color: #fff;
+      background: #078076;
+      border-radius: 50%;
+      font-size: 12px;
+      transition: all ease 0.5s;
+
+      &:hover {
+        color: #fff;
+        font-size: 14px;
+      }
+    }
+  }
+
+  :global(.time-btn) {
+    height: 54px;
+    padding: 10px;
+    font-size: 14px;
+    margin: 0 0 7px 7px;
+    min-width: 220px;
+    background-color: #dadada;
+    color: #000;
+    border: 1px solid #cecece;
+
+    &:hover,
+    &:focus {
+      background-color: #dadada;
+      color: #000;
+      border: 1px solid #cecece;
+    }
+
+    &:global(.active) {
+      background: #fff !important;
+      border: 1px solid #ddd;
+      border-left: 0;
+      margin: 0 0 7px -1px;
+    }
+  }
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.users {
+  border-radius: 2px;
+  position: relative;
+  cursor: pointer;
+  padding: 7px 17px;
+  margin-bottom: 7px;
+  height: 54px;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ddd;
+
+  a {
+    display: block;
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 4px;
+
+    &:hover,
+    &:focus {
+      color: #00ad9c;
+    }
+  }
+}
+
+.alert {
+  padding: 15px;
+}
+
+.capacityCount {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 5px;
+  cursor: pointer;
+
+  .count {
+    background: darken(#0ab0a3, 10%);
+    border-radius: 5px;
+    margin: 0 5px;
+    min-width: 20px;
+    display: inline-block;
+    padding: 0 5px;
+    color: #fff;
+  }
+}

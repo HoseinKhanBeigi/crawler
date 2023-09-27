@@ -1,0 +1,26 @@
+.inputs {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.channel {
+  width: 8.5rem;
+}
+
+.receipts {
+  flex-grow: 1;
+  margin-left: 24px !important;
+}
+
+.deleteButton {
+  align-self: flex-end;
+  color: #ff4d4f;
+  cursor: pointer;
+  position: absolute;
+  left: -22px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+}

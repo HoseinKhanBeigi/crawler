@@ -1,0 +1,21 @@
+.container{
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.12);
+    .success__message{
+        text-align: center;
+        .success__message__icon {
+            color: #52c41a;
+            font-size: 4.5rem;
+        }
+        .success__message__text {
+            color: rgba(0, 0, 0, 0.85);
+            font-size: 1.25rem;
+            padding-top: 30px;
+        }
+    }
+}

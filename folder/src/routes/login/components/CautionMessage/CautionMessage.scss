@@ -1,0 +1,15 @@
+.danger {
+  display: flex;
+  position: relative;
+  color: #707070;
+  font-size: 12px;
+
+  & span {
+    margin-left: 8px;
+
+    & i {
+      font-size: 18px;
+      color: #faad14;
+    }
+  }
+}

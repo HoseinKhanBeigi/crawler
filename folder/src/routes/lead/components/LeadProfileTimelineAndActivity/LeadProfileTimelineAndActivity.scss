@@ -1,0 +1,29 @@
+.timelineTabs {
+  background-color: #fff;
+  border-radius: 4px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.tabs {
+  :global {
+    .ant-tabs-nav {
+      & > div > .ant-tabs-tab:last-child {
+        margin-right: 16px;
+      }
+    }
+  }
+}
+
+.activityTableWrapper {
+  max-height: 40vh;
+  overflow: auto;
+
+  & > div {
+    padding: 12px;
+  }
+}
+
+.business {
+  max-height: 75vh;
+}

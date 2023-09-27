@@ -1,0 +1,147 @@
+.container {
+  width: 100%;
+  background-color: #132645;
+  padding-right: 40px;
+  height: 100vh;
+
+  .pic_holder {
+    display: none;
+  }
+
+  .icon {
+    background: url('/images/neshan_white.png') no-repeat;
+    width: 13px;
+    height: 13px;
+    background-size: contain;
+    margin-left: 5px;
+  }
+
+  .btn {
+    display: flex;
+    align-items: center;
+    margin-top: 42px;
+    padding: 11px 13px !important;
+    font-size: 11px !important;
+    &:focus { border: none !important; }
+  }
+
+  .logo_min {
+    width: 155px;
+    height: 28px;
+    background: url('/images/login_min_siva.png') no-repeat;
+    background-size: contain;
+    background-position: right;
+    margin-top: 42px;
+    margin-bottom: 100px;
+  }
+
+  .left_pic {
+    background: url('/images/logoLeftPicLogin.png') no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 94vh;
+  }
+
+  .slogan {
+    font-size: 2rem;
+    color: #364660;
+    font-weight: 800;
+    margin-bottom: 25px;
+  }
+
+  .text_welcome {
+    color: #fff;
+    width: 219px;
+    line-height: 2;
+    font-size: 1rem;
+    font-weight: 900;
+  }
+}
+
+.paragraphLeggal {
+  color: #b5b5b5;
+  font-size: 10px;
+  font-weight: normal;
+}
+
+.modalForWaiting {
+  display: block;
+  text-align: center;
+  padding: 18px 0;
+
+  .loading {
+    margin-bottom: 24px;
+  }
+
+  .main {
+    .title {
+      font-size: 18px;
+      color: #101010;
+      font-weight: bold;
+    }
+
+    .wait {
+      color: #707070;
+      font-size: 12px;
+      font-weight: 400;
+      margin-top: 10px;
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  .container {
+    padding-right: 80px !important;
+
+    .logo_min {
+      margin-top: 48px !important;
+      margin-bottom: 158px !important;
+    }
+
+    .text_welcome {
+      color: #fff !important;
+      width: 400px !important;
+      line-height: 65px !important;
+      font-size: 24px !important;
+      font-weight: 900 !important;
+    }
+
+    .paragraphLeggal {
+      font-size: 14px !important;
+      margin-top: 20px;
+    }
+
+    .btn {
+      font-size: 14px !important;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    padding-right: 160px !important;
+
+    .pic_holder {
+      display: block !important;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    .slogan {
+      font-weight: 900 !important;
+    }
+
+    .text_welcome {
+      font-size: 2.2rem !important;
+    }
+
+    .btn {
+      padding: 25px 32px !important;
+      font-size: 16px !important;
+    }
+  }
+}

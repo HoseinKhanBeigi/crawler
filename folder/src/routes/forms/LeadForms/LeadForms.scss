@@ -1,0 +1,16 @@
+@import '../../../components/variables';
+
+.leadForms {
+  position: relative;
+  min-height: 430px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background-color: #e8e8e8;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}

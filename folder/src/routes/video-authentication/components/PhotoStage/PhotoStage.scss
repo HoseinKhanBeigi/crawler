@@ -1,0 +1,116 @@
+.photo_container{
+    height: 699px; 
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    width: 100%;
+    video{
+        display: block;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.2);
+    }
+    img{
+        width: 100%;
+        height: 699px;
+        object-fit: cover;
+    }
+}
+.mask{
+    display: block;
+    position: absolute;
+    width: 100%;
+    object-fit: cover;
+    height: 699px; 
+    background: url('../../../../../public/images/Mask.png') 50% 50%;
+}
+.cameraContainer{
+    video{
+        display: block;
+        width: 100%;
+        object-fit: cover;
+        height: 699px; 
+        background: rgba(0, 0, 0, 0.2);
+    }
+}
+.footer{
+    height: 100px;
+    padding: 0 0 17px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.12);
+    background-color: #ffffff;
+}
+.footer__btn_shot{
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    .icon_camera{
+        color: #ffffff;
+        font-size: 18px;
+        background-color: #1c92ff;
+        width: 42px;
+        height: 42px;
+        border-radius: 42px;
+        padding: 5px;
+        line-height: 42px;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+    .shot_btn_container{
+        width: 72px;
+        text-align: center;
+    }
+    .shot_btn_caption{
+        padding-top: 5px;
+        font-size: 14px;
+        color: rgba(51, 51, 51, 0.85),
+    }
+    .btn_approvment{
+        text-align: center;
+        margin: 0 12px;
+        .icon_approv{
+            width: 42px;
+            height: 42px;
+            cursor: pointer;
+            border-radius: 30px;
+            background-color: #52c41a;
+            padding: 12px 14px;
+            font-size: 1rem;
+            color: #ffffff;
+        }
+    }
+    .btn_retake{
+        text-align: center;
+        margin: 0 12px;
+        .icon_retake{
+            width: 42px;
+            height: 42px;
+            cursor: pointer;
+            border-radius: 30px;
+            background-color: #b1b1b1;
+            padding: 12px 14px;
+            font-size: 1rem;
+            color: #ffffff;
+        }
+    }
+
+}
+.info_container{
+    text-align: center;
+    position: absolute;
+    left: 25px;
+}
+.info_icon{
+    display: block;
+    font-size: 1.25rem;
+    color: #1890ff;
+    padding: 10px 0;
+}
+.info_caption{
+    color: #1890ff;
+    font-size: 14px;
+    cursor: pointer;
+}

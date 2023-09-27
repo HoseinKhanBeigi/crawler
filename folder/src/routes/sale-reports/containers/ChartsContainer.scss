@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.charts {
+  padding: 32px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &__info {
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & :global {
+      .ant-tag i {
+        margin: 0 4px 0 0;
+      }
+    }
+  }
+}

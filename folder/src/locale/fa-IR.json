@@ -1,0 +1,405 @@
+[
+  {
+    "id": "navigation.logOut",
+    "description": "Log out link in header",
+    "defaultMessage": "Log out",
+    "message": "خروج",
+    "files": [
+      "src/components/AdminLayout/components/Navigation/messages.js"
+    ]
+  },
+  {
+    "id": "navigation.login",
+    "description": "Log in link in header",
+    "defaultMessage": "Log in",
+    "message": "ورود",
+    "files": [
+      "src/components/AdminLayout/components/Navigation/messages.js"
+    ]
+  },
+  {
+    "id": "navigation.signup",
+    "description": "Sign up link in header",
+    "defaultMessage": "Sign up",
+    "message": "ثبت نام",
+    "files": [
+      "src/components/AdminLayout/components/Navigation/messages.js"
+    ]
+  },
+  {
+    "id": "menu.dashboard",
+    "description": "Dashboard link in menu",
+    "defaultMessage": "Dashboard",
+    "message": "داشبورد",
+    "files": [
+      "src/components/AdminLayout/components/Sidebar/messages.js"
+    ]
+  },
+  {
+    "id": "menu.users",
+    "description": "Users link in menu",
+    "defaultMessage": "Users",
+    "message": "کاربران",
+    "files": [
+      "src/components/AdminLayout/components/Sidebar/messages.js"
+    ]
+  },
+  {
+    "id": "home.title",
+    "description": "Home page title",
+    "defaultMessage": "Home",
+    "message": "صفحه اصلی"
+  },
+  {
+    "id": "home.welcomeMessage",
+    "description": "Home page title",
+    "defaultMessage": "Welcome To {name} Components Document",
+    "message": "به سامانه {name} خوش آمدید"
+  },
+  {
+    "id": "login.login",
+    "description": "Log in page login",
+    "defaultMessage": "Login",
+    "message": "ورود",
+    "files": [
+      "src/routes/login/messages.js"
+    ]
+  },
+  {
+    "id": "login.password",
+    "description": "Log in page password",
+    "defaultMessage": "Password",
+    "message": "رمز عبور",
+    "files": [
+      "src/routes/login/messages.js"
+    ]
+  },
+  {
+    "id": "login.title",
+    "description": "Log in page title",
+    "defaultMessage": "Log In",
+    "message": "ورود",
+    "files": [
+      "src/routes/login/messages.js"
+    ]
+  },
+  {
+    "id": "login.username",
+    "description": "Log in page username",
+    "defaultMessage": "Username",
+    "message": "نام کاربری",
+    "files": [
+      "src/routes/login/messages.js"
+    ]
+  },
+  {
+    "id": "notFound",
+    "description": "Sorry, the page you were trying to view does not exist.",
+    "defaultMessage": "Sorry, the page you were trying to view does not exist.",
+    "message": "متاسفانه، صفحه درخواست شده وجود ندارد.",
+    "files": [
+      "src/routes/not-found/messages.js"
+    ]
+  },
+  {
+    "id": "menu.setting",
+    "description": "Setting in sidebar",
+    "defaultMessage": "Setting",
+    "message": "تنظیمات",
+    "files": [
+      "src/components/AdminLayout/components/Sidebar/messages.js"
+    ]
+  },
+  {
+    "id": "menu.leads",
+    "description": "Leads link in menu",
+    "defaultMessage": "Leads",
+    "message": "سرنخ",
+    "files": [
+      "src/components/AdminLayout/components/Sidebar/messages.js"
+    ]
+  },
+  {
+    "id": "menu.people",
+    "description": "People link in menu",
+    "defaultMessage": "People",
+    "message": "افراد",
+    "files": [
+      "src/components/AdminLayout/components/Sidebar/messages.js"
+    ]
+  },
+  {
+    "id": "menu.opportunities",
+    "description": "Opportunities in sidebar",
+    "defaultMessage": "Opportunities",
+    "message": "فرصت‌ها",
+    "files": [
+      "src/components/AdminLayout/components/Sidebar/messages.js"
+    ]
+  },
+  {
+    "id": "menu.saleOpportunities",
+    "description": "Sale opportunities in sidebar",
+    "defaultMessage": "Sale Opportunities",
+    "message": "فرصت‌های فروش",
+    "files": [
+      "src/components/AdminLayout/components/Sidebar/messages.js"
+    ]
+  },
+  {
+    "id": "service.forbidden",
+    "description": "service messages",
+    "defaultMessage": "user have not the necessary permissions.",
+    "message": "درخواست نامعتبر است.",
+    "files": [
+      "src/utils/messages.js"
+    ]
+  },
+  {
+    "id": "service.invalidReq",
+    "description": "service messages",
+    "defaultMessage": "invalid request.",
+    "message": "خطای سرور. مجددا تلاش کنید.",
+    "files": [
+      "src/utils/messages.js"
+    ]
+  },
+  {
+    "id": "service.serverErr",
+    "description": "service messages",
+    "defaultMessage": "server error.",
+    "message": "دسترسی امکان پذیر نیست.",
+    "files": [
+      "src/utils/messages.js"
+    ]
+  },
+  {
+    "id": "service.unauthorized",
+    "description": "service messages",
+    "defaultMessage": "authentication is required.",
+    "message": "دسترسی غیرمجاز است.",
+    "files": [
+      "src/utils/messages.js"
+    ]
+  },
+  {
+    "id": "service.wrongPassword",
+    "description": "service messages",
+    "defaultMessage": "wrong password.",
+    "message": "کلمه عبور اشتباه است.",
+    "files": [
+      "src/utils/messages.js"
+    ]
+  },
+  {
+    "id": "menu.crm",
+    "description": "Crm in sidebar",
+    "defaultMessage": "Crm",
+    "message": "مدیریت ارتباط با مشتریان",
+    "files": [
+      "src/components/AdminLayout/components/Sidebar/messages.js"
+    ]
+  },
+  {
+    "id": "menu.managementConsole",
+    "description": "managementConsole in sidebar",
+    "defaultMessage": "managementConsole",
+    "message": "مدیریت",
+    "files": [
+      "src/components/AdminLayout/components/Sidebar/messages.js"
+    ]
+  },
+  {
+    "id": "menu.kycTimeManagement",
+    "description": "kycTimeManagement in sidebar",
+    "defaultMessage": "kycTimeManagement",
+    "message": "زمان بندی KYC",
+    "files": [
+      "src/components/AdminLayout/components/Sidebar/messages.js"
+    ]
+  },
+  {
+    "id": "menu.reports",
+    "description": "reports in sidebar",
+    "defaultMessage": "reports",
+    "message": "گزارشات",
+    "files": [
+      "src/components/AdminLayout/components/Sidebar/messages.js"
+    ]
+  },
+  {
+    "id": "menu.representatives",
+    "description": "representatives in sidebar",
+    "defaultMessage": "representatives",
+    "message": "نمایندگی ها",
+    "files": [
+      "src/components/AdminLayout/components/Sidebar/messages.js"
+    ]
+  },
+  {
+    "id": "menu.branches",
+    "description": "branches in sidebar",
+    "defaultMessage": "branches",
+    "message": "شعبه ها",
+    "files": [
+      "src/components/AdminLayout/components/Sidebar/messages.js"
+    ]
+  },
+  {
+    "id": "menu.tools",
+    "description": "tools in sidebar",
+    "defaultMessage": "tools",
+    "message": "ابزار‌ها",
+    "files": [
+      "src/components/AdminLayout/components/Sidebar/messages.js"
+    ]
+  },
+  {
+    "id": "menu.settings",
+    "description": "settings in sidebar",
+    "defaultMessage": "settings",
+    "message": "مدیریت پنل",
+    "files": [
+      "src/components/AdminLayout/components/Sidebar/messages.js"
+    ]
+  },
+  {
+    "id": "menu.dealings",
+    "description": "dealings in sidebar",
+    "defaultMessage": "dealings",
+    "message": "تعاملات",
+    "files": [
+      "src/components/AdminLayout/components/Sidebar/messages.js"
+    ]
+  },
+  {
+    "id": "menu.messages",
+    "description": "messages in sidebar",
+    "defaultMessage": "messages",
+    "message": "پیام‌ها",
+    "files": [
+      "src/components/AdminLayout/components/Sidebar/messages.js"
+    ]
+  },
+  {
+    "id": "menu.calls",
+    "description": "calls in sidebar",
+    "defaultMessage": "calls",
+    "message": "تماس تلفنی",
+    "files": [
+      "src/components/AdminLayout/components/Sidebar/messages.js"
+    ]
+  },
+  {
+    "id": "menu.email",
+    "description": "email in sidebar",
+    "defaultMessage": "email",
+    "message": "ایمیل",
+    "files": [
+      "src/components/AdminLayout/components/Sidebar/messages.js"
+    ]
+  },
+  {
+    "id": "menu.case",
+    "description": "case in sidebar",
+    "defaultMessage": "case",
+    "message": "درخواست‌ها",
+    "files": [
+      "src/components/AdminLayout/components/Sidebar/messages.js"
+    ]
+  },
+  {
+    "id": "menu.videoAuthentication",
+    "description": "videoAuthentication in sidebar",
+    "defaultMessage": "videoAuthentication",
+    "message": "احراز هویت",
+    "files": [
+      "src/components/AdminLayout/components/Sidebar/messages.js"
+    ]
+  },
+  {
+    "id": "menu.sessions",
+    "description": "sessions in sidebar",
+    "defaultMessage": "sessions",
+    "message": "جلسات",
+    "files": [
+      "src/components/AdminLayout/components/Sidebar/messages.js"
+    ]
+  },
+  {
+    "id": "menu.videoAuthenticationList",
+    "description": "videoAuthenticationList in sidebar",
+    "defaultMessage": "videoAuthenticationList",
+    "message": "همه‌ی احراز هویت‌ها",
+    "files": [
+      "src/components/AdminLayout/components/Sidebar/messages.js"
+    ]
+  },
+  {
+    "id": "menu.videoAuthenticationNew",
+    "description": "videoAuthenticationNew in sidebar",
+    "defaultMessage": "videoAuthenticationNew",
+    "message": "احراز هویت جدید",
+    "files": [
+      "src/components/AdminLayout/components/Sidebar/messages.js"
+    ]
+  },
+  {
+    "id": "menu.employeeManagement",
+    "description": "employeeManagement in sidebar",
+    "defaultMessage": "employeeManagement",
+    "message": "مدیریت کاربران",
+    "files": [
+      "src/components/AdminLayout/components/Sidebar/messages.js"
+    ]
+  },
+  {
+    "id": "service.otpCodeError",
+    "defaultMessage": "رمز یکبار مصرف اشتباه است.",
+    "message": "",
+    "files": [
+      "src/utils/messages.js"
+    ]
+  },
+  {
+    "id": "service.rateLimitExceeded",
+    "description": "تعداد دفعات درخواست این سرویس بیش از 4 یا 5 بار شده است.",
+    "defaultMessage": "تعداد استعلام بیش از حد مجاز، لطفا دقایقی دیگر تلاش کنید.",
+    "message": "",
+    "files": [
+      "src/utils/messages.js"
+    ]
+  },
+  {
+    "id": "service.sejamRegistrationIncomplete",
+    "defaultMessage": "ثبت نام کاربر در سجام تکمیل نشده است.",
+    "message": "",
+    "files": [
+      "src/utils/messages.js"
+    ]
+  },
+  {
+    "id": "service.sejamTokenInvalid",
+    "defaultMessage": "توکن سجام اشتباه یا منقضی میباشد.",
+    "message": "",
+    "files": [
+      "src/utils/messages.js"
+    ]
+  },
+  {
+    "id": "service.sejamUserNotExist",
+    "defaultMessage": "این کاربر قبلا در سجام ثبت نام نکرده است.",
+    "message": "",
+    "files": [
+      "src/utils/messages.js"
+    ]
+  },
+  {
+    "id": "service.serverErrorNotResponse",
+    "defaultMessage": "این خطا هنگامی رخ میدهد که سرویس شما پاسخگو نباشد.",
+    "message": "",
+    "files": [
+      "src/utils/messages.js"
+    ]
+  }
+]

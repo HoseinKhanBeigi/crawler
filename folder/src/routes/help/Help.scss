@@ -1,0 +1,46 @@
+@import '../../components/variables';
+
+.root {
+  padding: 15px;
+
+  .title {
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 5px;
+    font-size: 18px;
+    color: #3d4db7;
+  }
+
+  .help {
+    min-height: 240px;
+  }
+
+  .icons {
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    color: #607d8b;
+    display: flex;
+    font-size: 32px;
+    height: 65px;
+    position: relative;
+    width: 65px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  a {
+    display: block;
+  }
+
+  h3 {
+    position: absolute;
+    top: 44px;
+    right: 103px;
+    font-size: 19px;
+  }
+
+  p {
+    color: #777;
+    text-align: justify;
+  }
+}

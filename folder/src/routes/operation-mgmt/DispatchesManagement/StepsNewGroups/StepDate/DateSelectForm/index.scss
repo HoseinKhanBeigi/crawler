@@ -1,0 +1,35 @@
+.label {
+  font-size: 12px;
+  font-weight: normal;
+  margin-bottom: 4px;
+  color: rgba(99, 99, 99, 0.85);
+}
+
+.buttonGroup {
+  padding-top: 24px;
+}
+
+.container {
+  padding-top: 24px;
+  padding-bottom: 8px;
+
+  :global {
+    .DateInput__display-text {
+      text-align: right;
+    }
+
+    .ant-input-number {
+      width: 100%;
+    }
+  }
+}
+
+.hr {
+  border-bottom: solid 1px #f0f0f0;
+  padding-top: 24px;
+}
+
+.day {
+  flex: 1 0 auto;
+  padding-left: 12px;
+}

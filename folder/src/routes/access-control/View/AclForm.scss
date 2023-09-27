@@ -1,0 +1,84 @@
+.wrapper {
+  background-color: white;
+  padding: 16px 32px 32px;
+
+  :global {
+    .selectInput {
+      margin-left: 0 !important;
+    }
+
+    .ant-tag {
+      margin: 0;
+    }
+
+    .ant-form-explain {
+      position: absolute;
+    }
+
+    .ant-table-tbody > tr,
+    .ant-table-thead > tr {
+      height: 65px !important;
+    }
+
+    .acl-switch {
+      & .ant-switch {
+        margin-left: 0 !important;
+      }
+    }
+
+    .ant-table-tbody > tr > td,
+    .ant-table-thead > tr > th {
+      max-width: 180px;
+      overflow: hidden;
+      font-size: 12px;
+      color: #3b556d;
+    }
+
+    .ant-table-expanded-row {
+      background-color: #fafafa !important;
+
+      &:hover {
+        background-color: #fafafa !important;
+      }
+    }
+  }
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #e8e8e8;
+  margin-bottom: 32px;
+
+  & form {
+    flex-grow: 1;
+  }
+
+  &__buttons {
+    margin-top: auto;
+
+    & > button:last-child {
+      margin-right: 8px;
+    }
+  }
+}
+
+.title {
+  margin-bottom: -8px;
+  display: flex;
+  gap: 32px;
+
+  p {
+    font-size: 12px;
+    color: #7a7a7a;
+    margin-bottom: 4px;
+  }
+
+  h3 {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0;
+  }
+}

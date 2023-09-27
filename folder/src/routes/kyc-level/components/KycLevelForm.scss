@@ -1,0 +1,30 @@
+.elementsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  :global {
+    .ant-tag-checkable {
+      background-color: rgb(249, 249, 249);
+      color: rgb(110, 110, 110);
+      border: 1px solid rgb(217, 217, 217);
+      margin: 0;
+    }
+
+    .ant-tag-checkable-checked {
+      background-color: #1890ff;
+      color: white;
+      border: 1px solid transparent;
+    }
+
+    & .ant-tag-checkable:first-child {
+      margin: 0 !important;
+    }
+  }
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}

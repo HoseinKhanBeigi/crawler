@@ -1,0 +1,25 @@
+.comment {
+  padding-bottom: 24px;
+  border-bottom: solid 1px #f0f0f0;
+  margin-bottom: 24px;
+  font-size: 12px;
+
+  &__header {
+    display: flex;
+    margin-bottom: 16px;
+
+    p {
+      color: #6e6e6e;
+      margin-left: 8px;
+    }
+
+    span {
+      direction: ltr;
+      color: #b8b8b8;
+    }
+  }
+
+  &__paragraph {
+    white-space: pre-wrap;
+  }
+}

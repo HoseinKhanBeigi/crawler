@@ -1,0 +1,78 @@
+/* stylelint-disable */
+@import '../../../../../components/variables';
+
+.card {
+  padding: 12px;
+  border-radius: 8px;
+  border: solid 1px #e0e5e8;
+  background-color: white;
+}
+
+.fieldContainer {
+  display: flex;
+  padding-bottom: 15px;
+
+  :global {
+    .DateInput .DateInput__display-text--has-input {
+      color: #000;
+      font-weight: 300;
+    }
+  }
+
+  :global {
+    .avatar-uploader {
+      width: 128px;
+      height: 128px;
+    }
+
+    .avatar-uploader > .ant-upload {
+      width: 128px;
+      height: 128px;
+
+      .ant-upload-text {
+        font-size: 11px;
+      }
+    }
+  }
+}
+
+.fieldTitle {
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.75;
+  color: rgba(99, 99, 99, 0.65);
+}
+
+.inputField {
+  //margin-top: 5px;
+  padding-left: 10px;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.79;
+  color: black;
+}
+
+.divider {
+  margin: 11px 0;
+  background: #e9e8e9;
+}
+
+.details {
+  .details_action {
+    margin: 0 0 12px;
+
+    .details_action_title {
+      font-size: 14px;
+      font-weight: 700;
+      color: #7a7a7a;
+
+      b {
+        color: #515151;
+        font-weight: bold;
+      }
+    }
+  }
+}

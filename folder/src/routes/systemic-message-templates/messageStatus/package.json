@@ -1,0 +1,7 @@
+{
+    "name": "MassageStatus",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./massageStatus.js"
+  }
+  

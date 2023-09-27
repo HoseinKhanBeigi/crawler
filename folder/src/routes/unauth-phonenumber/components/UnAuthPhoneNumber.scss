@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .box {
+    width: 40%;
+    height: auto;
+    margin-top: 15%;
+    padding: 60px 15px;
+    background-color: white;
+    border: 1px solid #ccc;
+    text-align: center;
+
+    .logo {
+      align-content: center;
+    }
+
+    .text {
+      margin: 10px 0;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .number {
+      color: #1890ff;
+      font-weight: bold;
+      direction: rtl;
+    }
+
+    .logout {
+      width: 100%;
+      color: #f5222d;
+      margin-top: 15px;
+      background-color: white;
+      border: none;
+      padding: 7px 0;
+      border-radius: 5px;
+    }
+
+    .logout:hover {
+      background-color: #fff1f0;
+    }
+  }
+}

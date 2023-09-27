@@ -1,0 +1,19 @@
+.centerCol {
+  color: #363636;
+  background-color: #fff;
+  font-size: 13px;
+  line-height: 24px;
+  width: 100%;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.tabs {
+  :global {
+    .ant-tabs-nav {
+      & > div > .ant-tabs-tab:last-child {
+        margin-right: 16px;
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.content {
+  margin-top: 12px;
+
+  .fieldTitle {
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.75;
+    margin-bottom: 12px;
+    color: rgba(99, 99, 99, 0.65);
+  }
+
+  .fieldValue {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.79;
+    color: rgba(51, 51, 51, 0.85);
+
+    :global {
+      .ant-typography-copy,
+      .ant-typography-edit,
+      .ant-typography-expand {
+        margin-right: 8px;
+      }
+    }
+  }
+
+  .label {
+    font-size: 12px;
+    color: #7a7a7a;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    color: #7a7a7a;
+    font-weight: bold;
+    border-top: 1px solid #f0f0f0;
+    padding-top: 15px;
+    padding-bottom: 12px;
+  }
+
+  .cardDetail {
+    position: relative;
+    width: 480px;
+    margin-right: 32px;
+    padding: 14px 24px 16px 24px;
+    border-radius: 4px;
+    border: solid 1px #abd8fb;
+    background-color: #e9f6fe;
+  }
+
+  .closeIcon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #000;
+    font-size: 10px;
+  }
+}

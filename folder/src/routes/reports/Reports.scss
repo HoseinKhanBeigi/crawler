@@ -1,0 +1,72 @@
+@import '../../components/variables';
+
+.root {
+  background: #fff;
+}
+
+.toolbar {
+  height: 72px;
+  padding: 12px 31px;
+  line-height: 45px;
+  background: $color-background-1;
+  border-bottom: 1px solid $border;
+
+  .toolbarTitle {
+    line-height: 45px;
+    float: right;
+    margin-left: 10px;
+  }
+
+  .select {
+    float: right;
+    width: 150px;
+  }
+
+  :global(.active) {
+    color: #096dd9;
+    background-color: #fff;
+    border-color: #096dd9;
+  }
+
+  .filter {
+    float: right;
+
+    p {
+      display: inline-block;
+      float: right;
+    }
+
+    :global {
+      .DateRangePickerInput--rtl {
+        border: 0;
+        margin-right: 10px;
+        background-color: inherit;
+      }
+
+      .DateInput {
+        margin: 0 7px;
+      }
+
+      .DateInput:hover {
+        cursor: pointer;
+      }
+
+      .DateRangePicker {
+        float: right;
+      }
+    }
+  }
+
+  .radio label {
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+
+  .submit {
+    background-color: $color-success;
+    color: #fff;
+    margin-right: 10px;
+    float: right;
+    margin-top: 8px;
+  }
+}

@@ -1,0 +1,7 @@
+{
+    "name": "CreditReportTab",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./CreditReportTab.js"
+  }
+  

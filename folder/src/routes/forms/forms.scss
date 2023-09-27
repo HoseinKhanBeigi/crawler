@@ -1,0 +1,11 @@
+@import '../../components/variables';
+
+.root {
+  padding: 15px 15px 0 15px;
+  background: white;
+  border-radius: 5px;
+
+  :global(.ant-tabs-bar) {
+    margin: 0 !important;
+  }
+}

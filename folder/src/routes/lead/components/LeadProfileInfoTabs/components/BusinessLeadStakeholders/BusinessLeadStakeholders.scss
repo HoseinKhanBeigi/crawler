@@ -1,0 +1,26 @@
+.relation {
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  border: solid 1px #e8e8e8;
+  border-radius: 4px;
+  margin-bottom: 8px;
+
+  &__name {
+    color: #1c92ff;
+    font-weight: bold;
+  }
+
+  &__tag {
+    margin-right: 4px;
+    padding: 2px 8px;
+    border-radius: 12px;
+    color: white;
+    font-size: 10px !important;
+  }
+
+  &__role {
+    color: #999;
+    margin-right: auto;
+  }
+}

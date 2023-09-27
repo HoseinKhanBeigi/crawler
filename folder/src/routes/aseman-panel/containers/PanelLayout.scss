@@ -1,0 +1,28 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-areas:
+    'groupBy groupBy'
+    'filter chart';
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+}
+
+.groupBySection {
+  grid-area: groupBy;
+  margin-top: -16px;
+  padding: 8px 32px;
+  border-bottom: 1px solid #e3e8ed;
+}
+
+.filterSection {
+  grid-area: filter;
+  padding: 0 16px 16px;
+  border-left: 1px solid #e3e8ed;
+}
+
+.chartSection {
+  grid-area: chart;
+  padding: 36px 32px;
+}

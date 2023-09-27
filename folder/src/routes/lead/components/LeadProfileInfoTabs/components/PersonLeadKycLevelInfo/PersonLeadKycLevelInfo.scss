@@ -1,0 +1,6 @@
+.kycLevel {
+  & > div:not(:last-child) {
+    margin-bottom: 16px;
+    border-bottom: 1px solid #e0e5e8;
+  }
+}
