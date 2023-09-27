@@ -1,0 +1,167 @@
+@import '../../components/variables';
+
+.bodyContainer {
+  color: $font-color;
+  max-width: 376px;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.04);
+  background-color: #fefefe;
+  margin-bottom: 32px;
+}
+
+.groupLabel {
+  font-size: 16px;
+  color: $font-color;
+  padding-bottom: 8px;
+  font-weight: 600;
+}
+
+.formTitle {
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 0.85;
+  line-height: 1.83;
+  color: #15354e;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 16px;
+}
+
+.container {
+  margin-bottom: 1em;
+}
+
+.contractBtnWrapper {
+  width: 100%;
+  text-align: center;
+
+  button {
+    color: #1890ff;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.58;
+    border: none;
+    height: unset;
+  }
+
+  &:not(:last-of-type) {
+    padding-bottom: 8px;
+  }
+}
+
+.hr {
+  width: calc(100% - 16px);
+  height: 0;
+  opacity: 0.55;
+  border: solid 1px #cbd8e3;
+  margin: 24px auto;
+}
+
+.esignBtn {
+  width: 100%;
+  height: 40px;
+  margin-top: 24px;
+  background-color: var(--Button-primary-color);
+  border: var(--Button-primary-color);
+
+  span {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.58;
+    color: #fff;
+  }
+
+  &:hover {
+    background-color: var(--Button-primary-color);
+    border: var(--Button-primary-color);
+  }
+
+  &:focus {
+    background-color: var(--Button-primary-color);
+    border: var(--Button-primary-color);
+  }
+}
+
+.otpModalContent {
+  :global {
+    .ant-modal-content {
+      width: 100%;
+      max-width: 100%;
+      margin-right: unset;
+    }
+  }
+}
+
+:global {
+  .ant-modal-footer {
+    text-align: center !important;
+    flex-grow: 1;
+  }
+}
+
+.modalFooter {
+  width: 100%;
+  background-color: var(--Button-primary-color);
+  border: var(--Button-primary-color);
+
+  &:hover {
+    background-color: var(--Button-primary-color);
+    border: var(--Button-primary-color);
+  }
+
+  &:focus {
+    background-color: var(--Button-primary-color);
+    border: var(--Button-primary-color);
+  }
+}
+
+.modalContent {
+  width: 650px !important;
+  max-width: 100%;
+
+  @media screen and (max-width: 1023px) {
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 100%;
+  }
+
+  :global {
+    .components-Esign-___modalContent___29oXy .ant-modal-body {
+      padding: 0 10px;
+    }
+
+    .ant-modal-body {
+      overflow-y: scroll;
+      max-height: 800px;
+      height: 100%;
+
+      @media screen and (max-width: 1023px) {
+        max-height: unset;
+        flex-grow: 2;
+      }
+    }
+
+    .ant-modal-content {
+      width: 100%;
+      max-width: 100%;
+      margin-right: unset;
+
+      @media screen and (max-width: 1023px) {
+        height: 100%;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+.pdfLoading {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.page {
+  text-align: center;
+}
