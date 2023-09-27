@@ -1,5 +1,8 @@
 const fs = require("fs");
 const path = require("path");
+const parser = require("@babel/parser");
+const traverse = require("@babel/traverse").default;
+const t = require("@babel/types");
 
 function extractWordsFromCode(code) {
   const functionRegex =
@@ -17,15 +20,20 @@ function extractWordsFromCode(code) {
     }
   }
 
-  const componentNames = code.match(/<(?:[A-Z]\w+|\/[A-Z]\w+)>/g) || [];
+  const regex = /<([A-Z][a-zA-Z0-9]+)[^>]*>/g;
+  const components = [];
+  let matchComponent;
+  while ((matchComponent = regex.exec(code))) {
+    components.push(matchComponent[1]);
+  }
+
   return {
     functions: functionNames,
-    components: componentNames.map((name) => name.replace(/[<>]/g, "")),
+    components: components,
   };
 }
 
 function parseTextToStructure(lines) {
-  // console.log(lines, "line");
   const result = {};
   let currentComponent = result;
 
@@ -36,8 +44,6 @@ function parseTextToStructure(lines) {
   } else {
     currentComponent = result; // Move back to the root component
   }
-
-  console.log(result, "res");
   return result;
 }
 
@@ -45,7 +51,13 @@ function processFilesInFolder(folderPath) {
   const files = fs.readdirSync(folderPath);
   const result = {};
 
-  files.forEach((file) => {
+  const filteredPaths = files.filter((path) => {
+    // Use a regular expression to check if the path ends with .scss, .css, or .json
+    const regex = /\.(tsx|jsx|js)$/;
+    return regex.test(path);
+  });
+
+  filteredPaths.forEach((file) => {
     const filePath = path.join(folderPath, file);
     const stats = fs.statSync(filePath);
 
@@ -55,15 +67,13 @@ function processFilesInFolder(folderPath) {
       const extractedWords = extractWordsFromCode(fileContent);
 
       const objectRepresentation = parseTextToStructure(extractedWords);
-      // console.log(objectRepresentation);
-
       if (Object.keys(extractedWords).length > 0) {
         result[file] = extractedWords;
       }
     }
   });
 
-  console.log(result);
+  const res = result;
 
   return result;
 }
@@ -96,6 +106,9 @@ function buildFolderData(rootDir) {
   }
 
   crawlDirectory(rootDir);
+  const filePath = "data.json";
+  createJsonFile(folderData, filePath);
+
   return folderData;
 }
 
@@ -103,34 +116,28 @@ if (require.main === module) {
   const rootDirectory = "./folder";
   const folderData = buildFolderData(rootDirectory);
   function convertJsonToFormat(json) {
-    // console.log(json,"json")
     const result = [];
-
     for (const key in json) {
       if (json.hasOwnProperty(key)) {
         const obj = { name: key, children: [] };
         const child = json[key];
-
         if (typeof child === "object" && Object.keys(child).length > 0) {
           obj.children = convertJsonToFormat(child);
         }
-
         result.push(obj);
       }
     }
-
     return result;
   }
 
   const parsedInput = JSON.parse(JSON.stringify(folderData, null, 2));
   const formattedData = convertJsonToFormat(parsedInput);
-
-  const jsonString = JSON.stringify(formattedData, null, 2); // The second argument (null) is for replacer function, and 2 for indentation
-
-  // Specify the file path
   const filePath = "data.json";
+  // createJsonFile(formattedData,filePath)
+}
 
-  // Write JSON data to the file
+function createJsonFile(data, filePath) {
+  const jsonString = JSON.stringify(data, null, 2); // The second argument (null) is for replacer function, and 2 for indentation
   try {
     fs.writeFileSync(filePath, jsonString, "utf8");
     console.log("JSON data has been written to " + filePath);
