@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.3.final using JasperReports Library version 6.20.3-415f9428cffdb6805c6f85bbb29ebaf18813a2ab  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="dorsaKYCForm" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1cbb4849-d698-411e-9fd8-2a7f9c718913">
+	<parameter name="logo" class="java.io.InputStream"/>
+	<parameter name="logo1" class="java.io.InputStream"/>
+	<parameter name="firstName" class="java.lang.String"/>
+	<parameter name="lastName" class="java.lang.String"/>
+	<parameter name="nationalCode" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="13" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="789">
+			<staticText>
+				<reportElement x="32" y="70" width="487" height="30" uuid="6df19bce-7730-4582-8ec8-9bc3bb638523">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Nazli" size="9"/>
+				</textElement>
+				<text><![CDATA[«این اقرارنامه و بیانیه پیش از هرگونه فعالیتی در بازار پایه فرابورس ایران توسط هریک از مشتریانی که در اين بازار فعالیت می­نمایند –اعم از مشتريان برخط و عادي- تكميل و امضا و در سوابق شركت كارگزاري نگهداري مي­شود».]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="102" width="552" height="76" uuid="97424d79-be26-42e2-a580-5b328b7ce66c">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[با توجه به ریسک­ موجود در معاملات سهام و حق تقدم خرید سهام در بازار پایه فرابورس ایران، به موجب این اقرارنامه اینجانب/اینجانبان .............................................................................. (براي اشخاص حقوقي: نام و نام خانوادگي صاحب/صاحبان امضای مجاز شركت ................................) ، اذعان، اظهار و اقرار مي­دارم/ می‌داریم که با اطلاع دقیق و علم و آگاهی کافی در خصوص وضعیت مالی ناشران بازار پایه، ماهیت آن بازار، اطلاعيه‌­هاي منتشره در سامانه رسمي افشاي اطلاعات شركت‌­هاي ثبت‌­شده نزد سازمان بورس و اوراق بهادار (كدال) و ساير ریسک‌­های معامله در بازار پایه از جمله عدم افشای صحیح و کامل اطلاعات توسط ناشران و ...، نسبت به معاملات سهام مذکور اقدام می‎‌نمایم/ می‌نماییم؛ همچنین اقرار کردم/ کردیم و متعهد و مطلع شدم/ شدیم:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="541" y="179" width="14" height="23" uuid="d84b62b3-4405-415f-82a6-2c8dfcdcbc97"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[-۱]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="179" width="542" height="50" uuid="4058f1bb-d332-4e2b-8bb3-df899bb4158b"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[از تمامی شرایط، قوانین و مقررات مربوط به انجام معاملات در بازار پایه فرابورس ایران، تابلوهای معاملاتی و ریسک‌های مربوط به آن از جمله  مفاد "دستورالعمل پذیرش، عرضه و نقل و انتقال اوراق بهادار در فرابورس ایران"، "دستورالعمل اجرایی نحوه انجام معاملات اوراق بهادار در فرابورس ایران"، "دستورالعمل اجرایی نحوه انجام معاملات بلوک در فرابورس ایران" و "دستورالعمل انضباطی ناشران ثبت شدۀ پذیرفته­نشده" مصوب هیأت‌مدیره سازمان بورس و اوراق بهادار و همچنين از اصلاحات بعدی آن و ساير مقررات مربوط آگاهی دقیق و کامل دارم/ داریم.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="228" width="542" height="62" uuid="b47395ff-525b-4a72-a639-9182e2992c4c"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[فرابورس ایران مطابق مقررات مربوط می­تواند نسبت به اعطای مجوز فعالیت به مشتریان و معامله­گران شرکت­های کارگزاری در هر یک از تابلوهای بازار پایه و طراحی، تعیین شروط مربوط و برگزاری آزمون­هایی با هدف سنجش دانش، توانایی و مهارت معامله­گران و مشتریان شرکت­های کارگزاری اقدام نماید؛ لذا در صورت عدم موفقیت اینجانب/ اینجانبان در آزمون­های مذکور اين موضوع به منزله عدم اخذ مجوز فعالیت در بازار و يا تابلوی مربوطه بوده و کارگزار می­تواند ضمن جلوگيري از هرگونه فعالیت اینجانب/ شركت ...... در بازار و يا تابلوی مربوط مانع فعالیت و دسترسی اینجانب/شركت ..... به بازار پایه شود.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="541" y="228" width="14" height="23" uuid="0ba02fca-a6c0-4d6e-8c0f-d27fe463d2aa"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[-۲]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="289" width="542" height="23" uuid="862100bb-0dbc-4595-b708-702395fb5b2a"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[در صورت نبود قابلیت نقدشوندگی در نمادهای معاملاتی سهام و حق­‌تقدم خرید سهام ناشران بازار پایه، مسئولیت سرمایه گذاری در این بازار با اینجانب/ شرکت می‌باشد.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="541" y="289" width="14" height="23" uuid="5c610a8d-99b9-4c6f-beb3-dd00f8117f8e"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[-۳]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="312" width="542" height="23" uuid="d85b5708-556c-4a79-9406-264307aa658a"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[قبل از شروع هرگونه فعاليت يا انجام معاملات در بازار پایه، از نرخ کارمزد و سایر هزینه­‌های مربوط اطلاعات لازم را کاملاً كسب نموده‌­ام / نموده ایم.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="541" y="312" width="14" height="23" uuid="bac3ff76-b8f2-4628-b17f-e6633161c977"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[-‌۴]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="335" width="542" height="35" uuid="15ad2b34-b31c-487e-a2b8-27fc419a868b"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[مطابق مقررات بازار پایه، سازمان بورس و اوراق بهادار یا فرابورس ایران می‌­تواند تحت شرایط مندرج در مقررات مربوطه نماد معاملاتی را متوقف یا تعلیق نماید. و اینجانب/ اینجانبان با علم و آگاهی به این موضوع در این بازار سرمایه گذاری نموده و مسئولیت آن صرفاً متوجه اینجانب/ اینجانبان می‌باشد.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="541" y="335" width="14" height="23" uuid="8198bf14-de18-4776-af94-a1b6f78778f8"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[-۵]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="369" width="542" height="111" uuid="47eb4723-1314-4751-b5d7-f8f5f709284b"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[معامله سهام یا حق­‌تقدم خرید سهام شرکت­ بورس انرژی ایران با حجم بزرگ­‌تر یا مساوی نیم درصد از سرمایه پایه و همچنین خرید اوراق بهادار آن شرکت­ توسط اشخاص حقوقی یا نهادهای خاص که دسته سهامداری ایشان بر اساسنامه شرکت­ بورس انرژی ایران برای فرابورس مشخص نمی‌­باشد، منوط به اخذ تاییدیه از سازمان بورس مبنی بر رعایت محدودیت‌­های قانونی و مقرراتی است و در صورت عدم رعایت محدودیت‌­های معاملاتی در دسته‌­های سهامداری شرکت بورس انرژی ایران يا ساير موارد مذكور در مقررات، فرابورس مي‌­تواند معاملات مزبور  را تایید ننمايد و در صورت وجود محدودیت‌­های فنی در امکان عدم تایید معاملات و اعلام فرابورس ايران مبنی بر عدم رعایت محدودیت­‌های معاملاتی فوق، کارگزار ناظر موظف است مازاد اوراق بهادار خریداری‌شده را در اولین روز کاری پس از انجام معامله، از طریق انجام حراج در نماد معاملاتی بازار عادی یا نمادي مجزا (حسب تشخیص فرابورس ايران) به عموم عرضه نماید. در صورت عدم امکان فروش به دلیل توقف نماد معاملاتی، مازاد سهام یا حق‌­تقدم خريد سهام خریداری‌شده، با اعلام فرابورس ايران به حالت مسدود در­می‌­آید و خریدار حق هیچ­گونه تصرف مالکان‌ه­ای (از جمله فروش، توثيق يا استفاده از حق رأي در مجامع عمومي ناشر) نسبت به اوراق بهادار مذکور  را نداشته و کلیۀ خسارات و هزینه‌­های ناشی از معامله مازاد اوراق بهادار از جمله کارمزدهای آن برعهده وی خواهد‌ بود.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="541" y="369" width="14" height="23" uuid="bebdd828-53e6-4f12-a31c-3e27484b32ac"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[-۶]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="480" width="542" height="23" uuid="8c88f982-05a5-41c8-b26d-6a84de771e40"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[برای خرید سهام و حق‌­تقدم سهام در نمادهای معاملاتی بازار پایه از هيچ­گونه اعتباري استفاده ننموده و بر مبنای سهام ناشران بازار پایه اعتبار دريافت نمي­‌نمايم/ نمی‌نماییم.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="541" y="480" width="14" height="23" uuid="80e76c0f-88fb-4a2e-a19d-483b2d28094f"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[-۷]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="2" y="503" width="542" height="47" uuid="a1c92086-9048-4c8d-9e67-c6fce506bc6d"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[مطابق "دستورالعمل پذیرش، عرضه و نقل و انتقال اوراق بهادار در فرابورس ایران"، درج اوراق بهادار در بازار پایه و همچنین لغو درج آن­ها با تایید "کمیته درج  فرابورس ایران" صورت می‌­پذیرد. علاوه بر این، تصمیم­‌گیری در خصوص انتقال شرکت‌­ها بین تابلوهای بازار پایه و تعیین دوره‌­های مورد رسیدگی، بر عهده کمیته مذکور می‌­باشد؛ لذا اینجانب/ اینجانبان حق هرگونه اعتراضی مبنی بر انتقال شرکت­‌ها فی­مابین تابلوهای "پایه زرد"،"پایه نارنجی"  و "پایه قرمز" و یا لغو درج آن‌­ها را از خود سلب و ساقط کردم/ کردیم.
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="541" y="503" width="14" height="23" uuid="969f0f41-8305-4323-be94-5195d69c1a62"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[-۸]]></text>
+			</staticText>
+			<line>
+				<reportElement x="2" y="562" width="539" height="1" uuid="1e0197ad-8394-4707-bdb0-9a142b5f43a4"/>
+			</line>
+			<line>
+				<reportElement x="2" y="562" width="1" height="121" uuid="e9137c73-cbc2-40d6-ac34-0cb54a430634"/>
+			</line>
+			<line>
+				<reportElement x="2" y="620" width="539" height="1" uuid="5df91443-8822-40f3-a974-20fbbe5b5f72"/>
+			</line>
+			<line>
+				<reportElement x="2" y="683" width="539" height="1" uuid="08a83c4d-eb60-4ebf-916e-18f6aa38dd01"/>
+			</line>
+			<line>
+				<reportElement x="188" y="562" width="1" height="121" uuid="942a6730-670a-4b29-9d79-f193b303ac5d"/>
+			</line>
+			<line>
+				<reportElement x="359" y="563" width="1" height="120" uuid="4656ebc6-bfb6-4ae3-b8ab-d8ec3390ff52"/>
+			</line>
+			<line>
+				<reportElement x="541" y="562" width="1" height="121" uuid="c196b77d-7f1a-4216-8c9f-da265942b888"/>
+			</line>
+			<staticText>
+				<reportElement x="370" y="562" width="170" height="20" uuid="ecaab123-6fa5-411d-88d2-9376be633c8e"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[نام و نام خانوادگی شخص حقیقی و کد ملی:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="140" y="564" width="48" height="18" uuid="4dc91e8e-e3b4-4173-b4ca-f7bbe429f166"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[محل امضا]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="360" y="620" width="180" height="28" uuid="bf9726cf-43a3-49e7-850c-1123d5fc73e0"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[ نام و نام خانوادگی صاحبان امضای مجاز شخص حقوقی و کد ملی ایشان:
+]]></text>
+			</staticText>
+			<line>
+				<reportElement x="268" y="563" width="1" height="119" uuid="b39a6b30-8b40-4193-8d64-91aaaf9e0955"/>
+			</line>
+			<staticText>
+				<reportElement x="268" y="564" width="91" height="20" uuid="15ff3ab2-94af-485e-8738-0690b2094969"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[شماره شناسنامه:
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="268" y="621" width="91" height="29" uuid="bf788559-48d1-42e8-87f6-b6fa716b4768"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[شناسه ملی شخص حقوقی:
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="230" y="563" width="38" height="55" uuid="ceb9da60-b644-472a-a7cb-f6bb99cf4e3a"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[اصالتاً:
+وکالتاً:
+ولایتاً:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="622" width="48" height="60" uuid="7f197c6e-e6a3-4b8c-9abd-6553197ce93b"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[اصالتاً:
+وکالتاً:
+به نمایندگی:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="140" y="622" width="48" height="19" uuid="5e454f82-1a67-4e15-af9d-441322d1cc96"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[محل امضا]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="160" y="602" width="28" height="16" uuid="f741cb24-7e72-4b0f-b1b2-c8b855c70443"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[تاریخ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="160" y="665" width="28" height="16" uuid="fb61bd93-8a9d-4ff8-ba6d-126c9635eab5"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[تاریخ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="95" y="641" width="93" height="14" uuid="a28cd930-452d-49e7-92c6-96a9c3ee0bab"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[مهر شخص حقوقی]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="35" y="3" width="487" height="51" uuid="9e8a2822-80c4-41cd-9170-a2cdad738ae0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Nazli" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[اقرارنامه و بیانیه پذیرش ریسک معاملات سهام و حق‌تقدم خرید سهام در بازار پایه فرابورس ایران]]></text>
+			</staticText>
+		</band>
+		<band height="699">
+			<staticText>
+				<reportElement x="0" y="10" width="540" height="23" uuid="825de285-54a9-4304-92f9-4d878cd960ba"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[تطبیق سفارش‌­ها در معاملات نمادهای معاملاتی بازار پایه یا تغییر روش آن­‌ها بر اساس شيوه‌­اي است كه به تصویب هیأت‌ ­مدیره فرابورس ایران و تایید سازمان بورس و اوراق بهادار مي­‌رسد.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="33" width="540" height="37" uuid="a861bf12-c067-4480-b517-e1d50c79703f"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[سفارش­‌های موجود در سامانه معاملاتی حداکثر به مدت شش ماه پس از تاریخ ابلاغ اصلاحات مقررات بازار پایه قابل نمایش خواهد بود، لکن پس از مهلت مذکور تعداد سفارش­‌های قابل مشاهده به صورت دوره‌ای و مرحله‌­ای و به تناسب هر تابلو کاسته یا حذف خواهد شد و در مرحله پیش ­گشایش، قیمت نظری گشایش(TOP) برای عموم منتشر می‌­شود.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="68" width="540" height="51" uuid="52e738c9-2f5c-4edb-844e-aecbf8f71a33"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[جلسات رسمی و روزهای انجام معامله انواع اوراق بهادار در تابلوهای"پایه زرد"، " پایه نارنجی"  و " پایه قرمز"، ساعت آغاز و خاتمه و مدت زمان هر جلسۀ معاملاتی و همچنین تعداد، مدت و انواع دسترسی معامله‌گران در مراحل انجام معامله، حداقل ارزش هر سفارش، حجم مبنا، واحد پایه هر سفارش (LOT)، حداقل حجم هر سفارش(MIN Q) ، اعتبار زمانی سفارش و نیز محدودیت‌­هایی از قبیل حداقل ارزش معاملات خرید برای معامله‌گران برخط یا عدم مشارکت معامله­‌گران برخط در مراحل پیش ­گشایش توسط هیأت‌مدیره فرابورس ايران تعیین می­‌گردد.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="119" width="540" height="41" uuid="37113cd6-3e7b-468b-9648-437154070885"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[ورود سفارش در نمادهای معاملاتی بازار پایه صرفاً به صورت «سفارش روز "Day"» امکان­‌پذیر می‌­باشد، مگر شرایط دیگری توسط فرابورس ایران اطلاع‌­رسانی گردد که با انتشار شرایط جدید در وب سایت رسمی شرکت فرابورس ایران و اطلاع آن به عموم، برای اینجانب/ اینجانبان نیز الزام‌­­آور بوده و آن را می‌­پذیرم / می‌پذیریم.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="159" width="540" height="70" uuid="4250032c-7776-4883-ba54-a694fd89c2e2"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[معاملات اوراق بهادار شركت‌هايي كه در تابلوهاي بازار پايه درج گرديده‌­اند، در تمامي جلسات رسمي معاملاتي به‌صورت حراج پيوسته و در محدوده دامنه نوساني ۳ درصد در تابلو پايه زرد، ۲ درصد در تابلو پايه نارنجي و ۱ درصد در تابلو پايه قرمز نسبت به قيمت پاياني در آخرين جلسه معاملاتي برگزاري حراج پاياني قابل انجام است. انجام حراج پاياني در نمادهاي معاملاتي تابلوهاي"پايه زرد"، "پايه نارنجي" و "پايه قرمز"، با دامنه نوسان قيمتي ۲ برابر دامنه نوسان روزانه قيمتي نماد معاملاتي در بازار عادي به نحوی که قیمت مرجع حراج پایانی، آخرین قیمت پایانی نماد معاملاتی خواهد بود و حداقل هفته‌­اي يك‌بار، امكان‌پذير است، مگر آنكه ناشر رويداد شركتي داشته‌باشد. در صورتي كه در روز تعيين شده امكان انجام حراج پاياني فراهم نباشد، انجام حراج پاياني به اولين جلسه رسمي معاملاتي بعد موكول مي‌­گردد.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="228" width="540" height="23" uuid="ec477eca-f707-4c56-bd14-3ff199e802e1"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[تعداد حراج پایانی حداقل یک‌بار در هفته برای هر تابلو خواهد بود، لکن امکان افزایش تعداد حراج پایانی و دامنه نوسان هر تابلو با پیشنهاد فرابورس ایران و تایید سازمان بورس و اوراق بهادار وجود دارد.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="250" width="540" height="49" uuid="cde423f6-ddfd-4eb4-969f-6e69625eeaee"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[فعاليت بازارگرداني در خصوص نمادهاي تابلوهاي بازار پايه براساس ضوابطي كه به تاييد هيات­‌مديره فرابورس خواهد رسيد مطابق دستورالعمل مربوطه امكان‌­پذير است. همچنين بازارگردان مي‌­تواند دامنه نوسان قيمتي نماد معاملاتي را تا دو برابر دامنه نوسان روزانه قيمتي نماد معاملاتي در بازار عادي، به شرطي كه از محدوديت دامنه نوسان روزانه قيمتي در بازار دوم فرابورس بيش‌تر نشود، افزايش دهد. همچنين بازارگردان مي‌تواند قيمت مرجع نماد معاملاتي را ضمن اعلام به فرابورس تعيين نمايد.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="298" width="540" height="82" uuid="8241560a-493b-493c-bfe7-48068fa1dab7"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[آن دسته از سهامدار/سهامداران عمده‌­ای که مالکیت حداقل ۲۵ درصد از سهام یک ناشر در بازار پایه فرابورس را دارند برای عرضه بیش از ۲ درصد از کل سهام تحت مالکیت یا کنترل و نفوذ خود در بازار عادی باید نسبت به اخذ تاییدیه کمیته درج اقدام نمایند. سایر سهامدار/سهامداران عمده که مالکیت کمتر از ۲۵ درصد و حداقل ۱ درصد از سهام یک ناشر در بازار پایه فرابورس را دارند، برای عرضه هر میزان از سهام تحت مالکیت یا کنترل یا نفوذ خود در بازار عادی باید نسبت به اخذ تاییدیه کمیته درج و حسب مورد ارائه تعهد خریدار یا خریداران جدید مبنی بر اینکه در هر زمان که تصمیمی برای عرضه سهام خریداری شده اتخاذ نمودند، سهام مذکور را با هر تعداد اوراق بهادار که باشد صرفاً براساس روشی که کمیته درج تعیین می‌­نماید، عرضه نمایند، امکان­‌پذیر است. در صورت عدم رعایت این ماده مدیرعامل فرابورس می­‌تواند معاملات انجام‌شده را تایید ننماید.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="379" width="540" height="41" uuid="3cf61871-7b62-469d-964a-54f9a1102df1"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[ریسک‌های مذکور در این سند جنبه حصری ندارند و اینجانب/اینجانبان اقرار می‌­دارم/می‌­داریم که نسبت به تمام ریسک‌های این بازار اعم از موارد مذکور در این بیانیه و غیر آن را آگاهی کامل داشته  و آن ریسک­‌ها را مشمول مفاد این اقرارنامه و بیانیه پذیرش ریسک، تلقی می‌­نمایم/می‌­نماییم.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="420" width="540" height="41" uuid="07c11078-4085-48af-aba3-9c8a43006ff1"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[متعهد شدم/ شدیم مفاد تمامی قوانین و مقررات لازم الاجرای بازار سرمایه به ویژه در حوزه شرکت‌های درج شده در بازار پایه و ضوابط معاملاتی آن‌ها را رعایت نموده و از هرگونه اقدامی که منجر به نقض قوانین و مقررات شود، خودداری ­نمایم/­نماییم.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-1" y="461" width="555" height="79" uuid="4e6a3072-0b54-48b3-b70a-6f2756c14d32">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[به موجب این سند اینجانب/اینجانبان ...................................................................................... (براي اشخاص حقوقي: نام نام خانوادگي صاحب/صاحبان امضای مجاز شركت ................................) ، اقرارنامه و بیانیه پذیرش ریسک معاملات سهام و حق تقدم خرید سهام در بازار پایه را دریافت و مطالعه نموده و ضمن اعلام و اقرار به آگاهی و اطلاع از کلیه قوانین و مقررات و شرایط معاملاتی و ریسک‌هایی که در آن بازار متصور بوده و احتمال وقوع دارد و نیز با شناخت و درک کامل از ماهیت امر و شرایط و مقررات مربوط، مراتب فوق­الذكر را با اراده و اختیار کامل تأیید نموده و هیچ‌گونه اعتراض و ادعایی اعم از حقوقی و جزایی در حال حاضر یا بعداً در این خصوص ندارم/ نداریم و حق دعوی خود در این زمینه را علی­الدوام سلب و ساقط کردم/کردیم. ]]></text>
+			</staticText>
+			<line>
+				<reportElement x="2" y="577" width="539" height="1" uuid="ae22e683-09f5-44c6-96f2-1405a906d535"/>
+			</line>
+			<line>
+				<reportElement x="2" y="635" width="539" height="1" uuid="1ba70ec1-4c00-4e79-8e68-4da5e3cbbfb6"/>
+			</line>
+			<line>
+				<reportElement x="2" y="698" width="539" height="1" uuid="bbeb77ee-2162-4937-a848-92027c991a5c"/>
+			</line>
+			<line>
+				<reportElement x="541" y="577" width="1" height="121" uuid="d6563096-8abd-432f-abaa-b79c1f44ed1d"/>
+			</line>
+			<line>
+				<reportElement x="359" y="578" width="1" height="120" uuid="ef83b318-9465-487c-91f6-36648b5cfbfc"/>
+			</line>
+			<line>
+				<reportElement x="268" y="578" width="1" height="119" uuid="2c43385b-2e3e-4514-896c-fab29c951a33"/>
+			</line>
+			<staticText>
+				<reportElement x="160" y="617" width="28" height="16" uuid="330efeb5-bb85-432a-ab63-1c0d14e7552c"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[تاریخ]]></text>
+			</staticText>
+			<line>
+				<reportElement x="188" y="577" width="1" height="121" uuid="19d2c517-9148-4d60-ae6f-407b0ead219b"/>
+			</line>
+			<staticText>
+				<reportElement x="140" y="579" width="48" height="18" uuid="2e8a5f96-8038-42d6-916f-6c90822f6f14"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[محل امضا]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="230" y="578" width="38" height="55" uuid="944525c6-d8c3-4462-8de2-81d1d32f18c3"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[اصالتاً:
+وکالتاً:
+ولایتاً:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="637" width="48" height="60" uuid="2dd09f92-32e6-40d5-b5b1-81bf8eec5b21"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[اصالتاً:
+وکالتاً:
+به نمایندگی:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="268" y="636" width="91" height="29" uuid="35c27b10-12ab-4edf-93ab-ab6af43b2630"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[شناسه ملی شخص حقوقی:
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="268" y="579" width="91" height="20" uuid="384da5ea-b1ee-4e40-b527-4bf4379ba73b"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[شماره شناسنامه:
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="370" y="579" width="170" height="20" uuid="a8b6ae9f-4188-4d54-85d6-57aa7b93b6b6"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[نام و نام خانوادگی شخص حقیقی و کد ملی:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="360" y="637" width="180" height="28" uuid="a5a75fec-1f21-4f76-bf82-04de67de1f27"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[ نام و نام خانوادگی صاحبان امضای مجاز شخص حقوقی و کد ملی ایشان:
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="140" y="637" width="48" height="19" uuid="1099c377-cee7-494e-bf1a-8c0886d36e7f"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[محل امضا]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="95" y="656" width="93" height="14" uuid="303a8d25-35fd-42a1-b103-e2275bcdf0b3"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Nazli"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[مهر شخص حقوقی]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="160" y="680" width="28" height="16" uuid="b832c95a-b8a9-45d8-bb75-a05374ca016a"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[تاریخ]]></text>
+			</staticText>
+			<line>
+				<reportElement x="2" y="577" width="1" height="121" uuid="2531f431-0623-413b-be27-e28a56bafbfb"/>
+			</line>
+			<staticText>
+				<reportElement x="541" y="10" width="14" height="23" uuid="6c145863-9f67-4d6b-b6b1-6e2ccecbaa11"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[-۹]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="541" y="32" width="14" height="23" uuid="a2cb461c-ebe2-4fe1-91a7-8bc9cbb52971"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[-۱۰]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="541" y="69" width="14" height="23" uuid="4f162f93-3d56-4a66-afb2-706f821eb270"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[-۱۱]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="540" y="122" width="14" height="23" uuid="1788cb9f-e66c-41c5-b930-1a158ec85f87"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[-۱۲]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="540" y="159" width="14" height="23" uuid="a4d509e0-c615-493d-8b15-0bc2000a1cf5"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[-۱۳]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="540" y="228" width="14" height="23" uuid="e43387f3-7220-4aa0-8374-7b72e05d7e58"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[-۱۴]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="540" y="250" width="14" height="23" uuid="8d893774-13c0-44af-8183-7a9620e82d30"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[-۱۵]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="540" y="300" width="14" height="23" uuid="122c6fb6-89b5-4593-9e69-1dc01de679af"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[-۱۶]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="540" y="380" width="14" height="23" uuid="0c878dc1-bd52-4b78-b3a8-2d919b744a84"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[-۱۷]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="540" y="420" width="14" height="23" uuid="0d9b85bf-1135-4b18-a115-7df6b5872629"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="Nazli" size="9"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[-۱۸]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+</jasperReport>
