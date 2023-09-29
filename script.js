@@ -28,8 +28,13 @@ function extractWordsFromCode(code) {
   }
 
   return {
-    functions: functionNames,
-    components: components,
+    children: [...new Set(functionNames), ...new Set(components)].map((e) => {
+      return {
+        name: e,
+        children: [],
+      };
+    }),
+    // components: [],
   };
 }
 
@@ -73,8 +78,6 @@ function processFilesInFolder(folderPath) {
     }
   });
 
-  const res = result;
-
   return result;
 }
 
@@ -86,6 +89,7 @@ function buildFolderData(rootDir) {
 
     folders.forEach((item) => {
       const itemPath = path.join(directory, item);
+
       const stats = fs.statSync(itemPath);
 
       if (stats.isDirectory()) {
@@ -106,34 +110,55 @@ function buildFolderData(rootDir) {
   }
 
   crawlDirectory(rootDir);
-  const filePath = "data.json";
-  createJsonFile(folderData, filePath);
+  // const filePath = "data.json";
+  // createJsonFile(folderData, filePath);
 
   return folderData;
 }
 
 if (require.main === module) {
-  const rootDirectory = "./folder";
+  const rootDirectory = "./folder2";
   const folderData = buildFolderData(rootDirectory);
-  function convertJsonToFormat(json) {
-    const result = [];
-    for (const key in json) {
-      if (json.hasOwnProperty(key)) {
-        const obj = { name: key, children: [] };
-        const child = json[key];
-        if (typeof child === "object" && Object.keys(child).length > 0) {
-          obj.children = convertJsonToFormat(child);
-        }
-        result.push(obj);
-      }
-    }
-    return result;
-  }
+  // function convertJsonToFormat(json) {
+  //   const result = [];
+  //   for (const key in json) {
+  //     if (json.hasOwnProperty(key)) {
+  //       const obj = { name: key, children: [] };
+  //       const child = json[key];
+  //       if (typeof child === "object" && Object.keys(child).length > 0) {
+  //         obj.children = convertJsonToFormat(child);
+  //       }
+  //       result.push(obj);
+  //     }
+  //   }
+  //   return result;
+  // }
 
   const parsedInput = JSON.parse(JSON.stringify(folderData, null, 2));
-  const formattedData = convertJsonToFormat(parsedInput);
+  // console.log(parsedInput);
+
+  const outputJSON = {
+    name: "src",
+    children: Object.entries(parsedInput.src).map(([name, item]) => ({
+      name,
+      children: [convertToDesiredFormat(item)],
+    })),
+  };
+
+  // const formattedData = convertJsonToFormat(parsedInput);
   const filePath = "data.json";
-  // createJsonFile(formattedData,filePath)
+  createJsonFile(outputJSON, filePath);
+}
+
+function convertToDesiredFormat(input) {
+  if (typeof input === "object" && !Array.isArray(input)) {
+    return {
+      name: Object.keys(input)[0],
+      children: Object.values(input).map(convertToDesiredFormat),
+    };
+  } else {
+    return { name: input, children: [] };
+  }
 }
 
 function createJsonFile(data, filePath) {
@@ -145,3 +170,71 @@ function createJsonFile(data, filePath) {
     console.error("Error writing JSON data: " + err);
   }
 }
+
+function transformObject(obj) {
+  const result = {
+    name: "",
+    children: [],
+  };
+
+  for (const key in obj) {
+    if (obj.hasOwnProperty(key)) {
+      const child = {
+        name: key,
+        children: [],
+      };
+
+      result.children.push(child);
+    }
+  }
+
+  return result.children;
+}
+
+const test = {
+  src: {
+    "frame.test.tsx": {
+      children: [
+        {
+          name: "assertOrder",
+          children: [],
+        },
+        {
+          name: "resizeFrameOverElement",
+          children: [],
+        },
+        {
+          name: "dragElementIntoFrame",
+          children: [],
+        },
+        {
+          name: "selectElementAndDuplicate",
+          children: [],
+        },
+        {
+          name: "expectEqualIds",
+          children: [],
+        },
+        {
+          name: "Excalidraw",
+          children: [],
+        },
+      ],
+    },
+    "bug-issue-template.js": {
+      children: [],
+    },
+  },
+};
+
+const test2 = {
+  name: "src",
+  children: [{ name: "bug-issue-template.j", children: [] }],
+};
+
+const outputJSON = Object.entries(test).map(([name, item]) => ({
+  name,
+  children: item.children || [],
+}));
+
+console.log(outputJSON);
