@@ -1,31 +1,35 @@
-import algoritmi from './algoritmi.json';
-import callCenter from './callcenter.json';
-import formDarkhastEtebarMoshtarianHaghighi from './form-darkhast-etebar-moshtarian-haghighi.json';
-import formJadidGharardadHoghoghiBahman from './form-jadid-gharardad-hoghoghi-bahman.json';
-import formJadidGhardadEtebariBahmanMah from './form-jadid-ghardad-etebari-bahman-mah.json';
-import formKharidForooshInterneti from './form-kharid-foroosh-interneti.json';
-import freezehoghoghi from './freezehoghoghi.json';
-import pazireshrisk from './pazireshrisk.json';
-import freezehaghighi from './freezehaghighi.json';
+import formDocOne from './formDocOne.json';
+import formDocTwo from './formDocTwo.json';
+import formDocThree from './formDocThree.json';
+import formDocFour from './formDocFour.json';
+import formDocFive from './formDocFive.json';
+import formDocSix from './formDocSix.json';
+import formDocSeven from './formDocSeven.json';
+import formDocEight from './formDocEight.json';
+import formDocNine from './formDocNine.json';
 import output from './output.json';
-import barkhat from './barkhat.json';
-import estefadeAzBarkhat from './estefadeAzBarKhat.json';
-import ekhtiareMoamele from './ekhtiareMoamele.json';
-import bayanieRiskEkhtiareMoamele from './bayanieRiskEkhtiareMoamele.json';
+import formDocTen from './formDocTen.json';
+import formDocEleven from './formDocEleven.json';
+import formDocTwelve from './formDocTwelve.json';
+import formDocthreetee from './formDocthreetee.json';
+import formDocFourteen from './formDocFourteen.json';
+import formDocFiveteen from './formDocFiveteen.json';
 
 export {
-  algoritmi,
-  callCenter,
-  formDarkhastEtebarMoshtarianHaghighi,
-  formJadidGharardadHoghoghiBahman,
-  formJadidGhardadEtebariBahmanMah,
-  formKharidForooshInterneti,
-  freezehoghoghi,
-  pazireshrisk,
-  freezehaghighi,
+  formDocOne,
+  formDocTwo,
+  formDocThree,
+  formDocFour,
+  formDocFive,
+  formDocSix,
+  formDocSeven,
+  formDocEight,
+  formDocNine,
   output,
-  barkhat,
-  estefadeAzBarkhat,
-  ekhtiareMoamele,
-  bayanieRiskEkhtiareMoamele,
+  formDocTen,
+  formDocEleven,
+  formDocTwelve,
+  formDocthreetee,
+  formDocFourteen,
+  formDocFiveteen,
 };

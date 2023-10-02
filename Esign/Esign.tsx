@@ -13,20 +13,22 @@ import { BuiltInStageProps } from '../../interfaces/builtInStages.interface';
 import Algo from './contractReader/algo';
 import ContractStage from './contractReader/contract';
 import {
-  algoritmi,
-  callCenter,
-  formDarkhastEtebarMoshtarianHaghighi,
-  formJadidGharardadHoghoghiBahman,
-  formJadidGhardadEtebariBahmanMah,
-  formKharidForooshInterneti,
-  freezehoghoghi,
-  pazireshrisk,
-  freezehaghighi,
+  formDocOne,
+  formDocTwo,
+  formDocThree,
+  formDocFour,
+  formDocFive,
+  formDocSix,
+  formDocSeven,
+  formDocEight,
+  formDocNine,
   output,
-  barkhat,
-  estefadeAzBarkhat,
-  ekhtiareMoamele,
-  bayanieRiskEkhtiareMoamele,
+  formDocTen,
+  formDocEleven,
+  formDocTwelve,
+  formDocthreetee,
+  formDocFourteen,
+  formDocFiveteen,
 } from './jsons';
 
 const PdfViewer = dynamic(() => import('./pdfReader'), { ssr: false });
@@ -37,85 +39,100 @@ const DOWNLOADING = 'درحال آماده‌سازی ...';
 const contractList = [
   {
     label: 'فرم معاملات الگوریتمی',
-    data: algoritmi,
+    data: formDocOne,
     isVisible: false,
     statue: true,
-    name: 'algoritmi',
+    name: 'formDocOne',
   },
   {
     label: 'فرم قرارداد کال سنتر',
-    data: callCenter,
+    data: formDocTwo,
     isVisible: false,
-    name: 'callCenter',
-  },
-  {
-    label: 'فرم فریز مشتریان حقیقی',
-    data: freezehaghighi,
-    isVisible: false,
-    name: 'freezehaghighi',
-  },
-  {
-    label: 'فرم فریز  مشتریان حقوقی',
-    data: freezehoghoghi,
-    isVisible: false,
-    name: 'freezehoghoghi',
+    name: 'formDocTwo',
   },
   {
     label: 'فرم درخواست اعتبار خام',
-    data: formDarkhastEtebarMoshtarianHaghighi,
+    data: formDocThree,
     isVisible: false,
-    name: 'formDarkhastEtebarMoshtarianHaghighi',
-  },
-  {
-    label: 'فرم خرید وفروش اینترنتی',
-    data: formKharidForooshInterneti,
-    isVisible: false,
-    name: 'formKharidForooshInterneti',
-  },
-  {
-    label: 'فرم جدید قرارداد اعتباری حقیقی-بهمن ماه',
-    data: formJadidGhardadEtebariBahmanMah,
-    isVisible: false,
-    name: 'formJadidGhardadEtebariBahmanMah',
+    name: 'formDocThree',
   },
   {
     label: 'فرم جدید قرارداد اعتباری حقوقی-بهمن ماه',
-    data: formJadidGharardadHoghoghiBahman,
+    data: formDocFour,
     isVisible: false,
-    name: 'formJadidGharardadHoghoghiBahman',
+    name: 'formDocFour',
+  },
+  {
+    label: 'فرم جدید قرارداد اعتباری حقیقی-بهمن ماه',
+    data: formDocFive,
+    isVisible: false,
+    name: 'formDocFive',
+  },
+  {
+    label: 'فرم خرید وفروش اینترنتی',
+    data: formDocSix,
+    isVisible: false,
+    name: 'formDocSix',
+  },
+  {
+    label: 'فرم فریز  مشتریان حقوقی',
+    data: formDocSeven,
+    isVisible: false,
+    name: 'formDocSeven',
   },
   {
     label: 'فرم بیانیه پذیرش ریسک',
-    data: pazireshrisk,
+    data: formDocEight,
     isVisible: false,
-    name: 'pazireshrisk',
+    name: 'formDocEight',
   },
   {
-    label: 'بر خط  ',
-    data: barkhat,
+    label: 'فرم فریز مشتریان حقیقی',
+    data: formDocNine,
     isVisible: false,
-    name: 'barkhat',
+    name: 'formDocNine',
+  },
+
+  {
+    label: 'بر خط  ',
+    data: formDocTen,
+    isVisible: false,
+    name: 'formDocTen',
     statue: true,
   },
   {
     label: 'تعهدنامه استفاده از برخط',
-    data: estefadeAzBarkhat,
+    data: formDocEleven,
     isVisible: false,
-    name: 'estefadeAzBarkhat',
+    name: 'formDocEleven',
     statue: true,
   },
   {
     label: 'اختیار معامله ',
-    data: ekhtiareMoamele,
+    data: formDocTwelve,
     isVisible: false,
-    name: 'ekhtiareMoamele',
+    name: 'formDocTwelve',
     statue: true,
   },
   {
     label: 'بیانیه ریسک اختیار معامله ',
-    data: bayanieRiskEkhtiareMoamele,
+    data: formDocthreetee,
     isVisible: false,
-    name: 'bayanieRiskEkhtiareMoamele',
+    name: 'formDocthreetee',
+    statue: true,
+  },
+  {
+    label: 'بیانیه ریسک – قرارداد آتی',
+    data: formDocFourteen,
+    name: 'formDocFourteen',
+    isVisible: false,
+    statue: true,
+  },
+  {
+    label: 'قراردادفی مابین مشتری . کارگزار-قراردادآتی',
+    data: formDocFiveteen,
+    name: 'formDocFiveteen',
+    isVisible: false,
     statue: true,
   },
   {
@@ -253,7 +270,6 @@ function Esign({ stage, actions: { submitForm } }: BuiltInStageProps) {
     [stage.extraConfig?.forms, formIndexToPreview, formsDownloadInProgress],
   );
 
-  const listOfContarcts = lists => {};
 
   const [contract, dispatch] = useReducer(reducer, contractList);
 
@@ -311,7 +327,7 @@ function Esign({ stage, actions: { submitForm } }: BuiltInStageProps) {
       <Modal
         title="Basic Modal"
         visible={isPdfModalVisible}
-        onCancel={() => closePdfViewerModal}
+        onCancel={() => closePdfViewerModal()}
         centered
         className={style.modalContent}
         footer={[
@@ -326,9 +342,9 @@ function Esign({ stage, actions: { submitForm } }: BuiltInStageProps) {
           <Button
             className={style.modalFooter}
             type="primary"
-            onClick={() => closePdfViewerModal}
+            onClick={() => closePdfViewerModal()}
           >
-            بستن
+            بستن123
           </Button>,
         ]}
       >
