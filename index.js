@@ -4,7 +4,7 @@ const mammoth = require("mammoth");
 const fs = require("fs");
 // const pdf = require("pdf-parse");
 
-const docxFilePath = "./test4.docx";
+const docxFilePath = "./test66.docx";
 const pageNumber = 28;
 const tableArray = Array(4).fill([]);
 // Read the DOCX file
@@ -29,7 +29,7 @@ fs.readFile(docxFilePath, (err, data) => {
       }
 
       const jsonText = JSON.stringify(res, null, 2);
-      fs.writeFile("output.json", jsonText, (writeErr) => {
+      fs.writeFile("output2.json", jsonText, (writeErr) => {
         if (writeErr) {
           console.error("Error writing JSON file:", writeErr);
         } else {

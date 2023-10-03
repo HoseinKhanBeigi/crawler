@@ -1,17 +1,17 @@
-import React, { useMemo, useState, useReducer } from 'react';
-import { useRouter } from 'next/router';
-import { useSelector } from 'react-redux';
-import { Button, Modal, Checkbox } from 'antd';
-import { LeftOutlined } from '@ant-design/icons';
-import dynamic from 'next/dynamic';
-import { configurableRequest } from '../../lib/configurableRequest';
-import { RequestInstance } from '../../store/request';
-import { RootState } from '../../store/rootReducer';
-import style from './Esign.scss';
-import OtpContainer, { INVALID_OTP_CODE } from '../OtpContainer/OtpContainer';
-import { BuiltInStageProps } from '../../interfaces/builtInStages.interface';
-import Algo from './contractReader/algo';
-import ContractStage from './contractReader/contract';
+import React, { useMemo, useState, useReducer } from "react";
+import { useRouter } from "next/router";
+import { useSelector } from "react-redux";
+import { Button, Modal, Checkbox } from "antd";
+import { LeftOutlined } from "@ant-design/icons";
+import dynamic from "next/dynamic";
+import { configurableRequest } from "../../lib/configurableRequest";
+import { RequestInstance } from "../../store/request";
+import { RootState } from "../../store/rootReducer";
+import style from "./Esign.scss";
+import OtpContainer, { INVALID_OTP_CODE } from "../OtpContainer/OtpContainer";
+import { BuiltInStageProps } from "../../interfaces/builtInStages.interface";
+import Algo from "./contractReader/algo";
+import ContractStage from "./contractReader/contract";
 import {
   formDocOne,
   formDocTwo,
@@ -29,125 +29,126 @@ import {
   formDocthreetee,
   formDocFourteen,
   formDocFiveteen,
-} from './jsons';
+  formDocSixteen,
+} from "./jsons";
 
-const PdfViewer = dynamic(() => import('./pdfReader'), { ssr: false });
+const PdfViewer = dynamic(() => import("./pdfReader"), { ssr: false });
 
-const DOWNLOAD = 'دانلود متن قرارداد ';
-const DOWNLOADING = 'درحال آماده‌سازی ...';
+const DOWNLOAD = "دانلود متن قرارداد ";
+const DOWNLOADING = "درحال آماده‌سازی ...";
 
 const contractList = [
   {
-    label: 'فرم معاملات الگوریتمی',
+    label: "فرم معاملات الگوریتمی",
     data: formDocOne,
     isVisible: false,
     statue: true,
-    name: 'formDocOne',
+    name: "formDocOne",
   },
   {
-    label: 'فرم قرارداد کال سنتر',
+    label: "فرم قرارداد کال سنتر",
     data: formDocTwo,
     isVisible: false,
-    name: 'formDocTwo',
+    name: "formDocTwo",
   },
   {
-    label: 'فرم درخواست اعتبار خام',
+    label: "فرم درخواست اعتبار خام",
     data: formDocThree,
     isVisible: false,
-    name: 'formDocThree',
+    name: "formDocThree",
   },
   {
-    label: 'فرم جدید قرارداد اعتباری حقوقی-بهمن ماه',
+    label: "فرم جدید قرارداد اعتباری حقوقی-بهمن ماه",
     data: formDocFour,
     isVisible: false,
-    name: 'formDocFour',
+    name: "formDocFour",
   },
   {
-    label: 'فرم جدید قرارداد اعتباری حقیقی-بهمن ماه',
+    label: "فرم جدید قرارداد اعتباری حقیقی-بهمن ماه",
     data: formDocFive,
     isVisible: false,
-    name: 'formDocFive',
+    name: "formDocFive",
   },
   {
-    label: 'فرم خرید وفروش اینترنتی',
+    label: "فرم خرید وفروش اینترنتی",
     data: formDocSix,
     isVisible: false,
-    name: 'formDocSix',
+    name: "formDocSix",
   },
   {
-    label: 'فرم فریز  مشتریان حقوقی',
+    label: "فرم فریز  مشتریان حقوقی",
     data: formDocSeven,
     isVisible: false,
-    name: 'formDocSeven',
+    name: "formDocSeven",
   },
   {
-    label: 'فرم بیانیه پذیرش ریسک',
+    label: "فرم بیانیه پذیرش ریسک",
     data: formDocEight,
     isVisible: false,
-    name: 'formDocEight',
+    name: "formDocEight",
   },
   {
-    label: 'فرم فریز مشتریان حقیقی',
+    label: "فرم فریز مشتریان حقیقی",
     data: formDocNine,
     isVisible: false,
-    name: 'formDocNine',
+    name: "formDocNine",
   },
 
   {
-    label: 'بر خط  ',
+    label: "بر خط  ",
     data: formDocTen,
     isVisible: false,
-    name: 'formDocTen',
+    name: "formDocTen",
     statue: true,
   },
   {
-    label: 'تعهدنامه استفاده از برخط',
+    label: "تعهدنامه استفاده از برخط",
     data: formDocEleven,
     isVisible: false,
-    name: 'formDocEleven',
+    name: "formDocEleven",
     statue: true,
   },
   {
-    label: 'اختیار معامله ',
+    label: "اختیار معامله ",
     data: formDocTwelve,
     isVisible: false,
-    name: 'formDocTwelve',
+    name: "formDocTwelve",
     statue: true,
   },
   {
-    label: 'بیانیه ریسک اختیار معامله ',
+    label: "بیانیه ریسک اختیار معامله ",
     data: formDocthreetee,
     isVisible: false,
-    name: 'formDocthreetee',
+    name: "formDocthreetee",
     statue: true,
   },
   {
-    label: 'بیانیه ریسک – قرارداد آتی',
+    label: "بیانیه ریسک – قرارداد آتی",
     data: formDocFourteen,
-    name: 'formDocFourteen',
+    name: "formDocFourteen",
     isVisible: false,
     statue: true,
   },
   {
-    label: 'قراردادفی مابین مشتری . کارگزار-قراردادآتی',
+    label: "قراردادفی مابین مشتری . کارگزار-قراردادآتی",
     data: formDocFiveteen,
-    name: 'formDocFiveteen',
+    name: "formDocFiveteen",
     isVisible: false,
     statue: true,
   },
   {
-    label: 'فرم  ',
-    data: output,
+    label: "پیوست: نمونه اقرارنامه",
+    data: formDocSixteen,
+    name: "formDocSixteen",
     isVisible: false,
-    name: 'output',
     statue: true,
   },
 ];
 
 const reducer = (state, action) => {
   switch (action.type) {
-    case 'COMPLETE':
-      return state.map(contract => {
+    case "COMPLETE":
+      return state.map((contract) => {
         if (contract.name === action.name) {
           return { ...contract, isVisible: !contract.isVisible };
         } else {
@@ -174,13 +175,14 @@ function Esign({ stage, actions: { submitForm } }: BuiltInStageProps) {
   const router = useRouter();
   const applicationDetail = useSelector(
     ({ application }: RootState) =>
-      application.data?.application?.applicationInfo,
+      application.data?.application?.applicationInfo
   );
   const applicationId = router.query.applicationId as string;
 
-  const formsConfig = useMemo(() => stage?.extraConfig?.forms, [
-    stage?.extraConfig?.forms,
-  ]);
+  const formsConfig = useMemo(
+    () => stage?.extraConfig?.forms,
+    [stage?.extraConfig?.forms]
+  );
 
   function visitPdf(index) {
     setFormIndexToPreview(index);
@@ -198,7 +200,7 @@ function Esign({ stage, actions: { submitForm } }: BuiltInStageProps) {
       await submitForm(data);
     } catch (error) {
       const exceptionMessage = error?.response?.data?.exceptionMessage;
-      if (exceptionMessage === 'INVALID_E_SIGN_OTP') {
+      if (exceptionMessage === "INVALID_E_SIGN_OTP") {
         throw INVALID_OTP_CODE;
       }
     }
@@ -210,7 +212,7 @@ function Esign({ stage, actions: { submitForm } }: BuiltInStageProps) {
       action,
       router,
       { ...applicationDetail },
-      { responseType: 'blob' },
+      { responseType: "blob" }
     );
   }
 
@@ -219,16 +221,16 @@ function Esign({ stage, actions: { submitForm } }: BuiltInStageProps) {
     try {
       const response = await getPdf(formsConfig[index].action);
       setFormsDownloadInProgress(
-        formsDownloadInProgress.filter(itemIndex => itemIndex === index),
+        formsDownloadInProgress.filter((itemIndex) => itemIndex === index)
       );
       const blob = new Blob([response]);
-      const link = document.createElement('a');
+      const link = document.createElement("a");
       link.href = window.URL.createObjectURL(blob);
       link.download = `${form.label}.pdf`;
       link.click();
     } catch {
       setFormsDownloadInProgress(
-        formsDownloadInProgress.filter(itemIndex => itemIndex === index),
+        formsDownloadInProgress.filter((itemIndex) => itemIndex === index)
       );
     }
   }
@@ -267,14 +269,13 @@ function Esign({ stage, actions: { submitForm } }: BuiltInStageProps) {
           </div>
         );
       }),
-    [stage.extraConfig?.forms, formIndexToPreview, formsDownloadInProgress],
+    [stage.extraConfig?.forms, formIndexToPreview, formsDownloadInProgress]
   );
-
 
   const [contract, dispatch] = useReducer(reducer, contractList);
 
-  const handleComplete = item => {
-    dispatch({ type: 'COMPLETE', name: item.name });
+  const handleComplete = (item) => {
+    dispatch({ type: "COMPLETE", name: item.name });
   };
 
   const handleObserve = (item, index) => {
@@ -331,9 +332,9 @@ function Esign({ stage, actions: { submitForm } }: BuiltInStageProps) {
         centered
         className={style.modalContent}
         footer={[
-          <div style={{ display: 'flex' }}>
+          <div style={{ display: "flex" }}>
             <Checkbox
-              onChange={e => handleChange(e, contractItem)}
+              onChange={(e) => handleChange(e, contractItem)}
               checked={isChecked}
             >
               قرارداد را مشاهده و پذیرفته ام
@@ -369,7 +370,7 @@ function Esign({ stage, actions: { submitForm } }: BuiltInStageProps) {
       >
         <OtpContainer
           sendOtpAction={stage.extraConfig?.actions?.sendOtp}
-          verifyOtp={otp => verifyOtp(otp)}
+          verifyOtp={(otp) => verifyOtp(otp)}
           setCount={setCount}
           submitButtonTitle="تایید کد و امضای الکترونیکی قراردادها"
           description="کد تایید به شماره سجامی شما ارسال شده است، لطفا کد تایید دریافت شده را وارد کنید"
