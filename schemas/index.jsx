@@ -31,47 +31,81 @@ function Sechma() {
     }
   };
 
-  return (
-    <div className="container">
-      <div className="pageA4" ref={pageRef}>
-        {data1.map((e) =>
-          e.pages?.map((page) => (
-            <div className="pageContent">
-              {page.entities.map((item) => {
-                return (
-                  <>
-                    {item.id !== "table" ? (
-                      item.bold || item.contractTitle ? (
-                        <div className="itemText">{item.text}</div>
-                      ) : item.description ? (
-                        <div className="itemDescription">{item.text}</div>
-                      ) : item.title ? (
-                        <div className="itemTitle">{item.text}</div>
-                      ) : (
-                        <div className="text">
-                          {!item.regex ? (
-                            <>{item.text}</>
-                          ) : (
-                            <>{handleMoreThanThreeDot(item)}</>
-                          )}
-                        </div>
-                      )
-                    ) : (
-                      <Table tableArray={item?.table} />
-                    )}
-                  </>
-                );
-              })}
+  const convertToPdf = () => {
+    const element = pageRef.current; // Replace with your HTML element's ID
 
-              <div className="sign">
-                <span>امضاومهر کارگزاری</span>
-                <span>امضاومهر مشتری</span>
+    console.log(element);
+
+    //  .forEach((el, i) => {
+    //     html2pdf()
+    //       .from(el)
+
+    // .outputPdf((pdf) => {
+    //   const pdfBlob = new Blob([pdf], { type: "application/pdf" });
+    //   const pdfUrl = URL.createObjectURL(pdfBlob);
+    //   window.open(pdfUrl); // Opens the PDF in a new tab
+    // })
+    //       .save("exported_file.pdf");
+    //   });
+
+    const pages = [...element.querySelectorAll(".pageContent")];
+    const pdfDoc = html2pdf();
+
+    pages.forEach((el) => {
+      pdfDoc.from(el).outputPdf();
+    });
+
+    pdfDoc.save("exported_file.pdf");
+  };
+
+  const generatePDF = () => {
+    window.print();
+  };
+
+  return (
+    <>
+      <button onClick={generatePDF}>Convert to PDF</button>
+      <div className="container">
+        <div className="pageA4" ref={pageRef}>
+          {data1.map((e) =>
+            e.pages?.map((page, idx) => (
+              <div className="pageContent">
+                {page.entities.map((item) => {
+                  return (
+                    <>
+                      {item.id !== "table" ? (
+                        item.bold || item.contractTitle ? (
+                          <div className="itemText">{item.text}</div>
+                        ) : item.description ? (
+                          <div className="itemDescription">{item.text}</div>
+                        ) : item.title ? (
+                          <div className="itemTitle">{item.text}</div>
+                        ) : (
+                          <div className="text">
+                            {!item.regex ? (
+                              <>{item.text}</>
+                            ) : (
+                              <>{handleMoreThanThreeDot(item)}</>
+                            )}
+                          </div>
+                        )
+                      ) : (
+                        <Table tableArray={item?.table} />
+                      )}
+                    </>
+                  );
+                })}
+
+                <div className="sign">
+                  <span>امضاومهر کارگزاری</span>
+                  <span>امضاومهر مشتری</span>
+                </div>
               </div>
-            </div>
-          ))
-        )}
+            ))
+          )}
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
