@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef, useReducer } from "react";
 import html2pdf from "html2pdf.js";
 import { saveAs } from "file-saver";
-import data1 from "../algorithem.json";
+import data1 from "../formDocOne.json";
 import "./schema.css";
 import Table from "./table";
 
