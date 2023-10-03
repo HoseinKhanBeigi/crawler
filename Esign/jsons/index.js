@@ -15,6 +15,7 @@ import formDocthreetee from "./formDocthreetee.json";
 import formDocFourteen from "./formDocFourteen.json";
 import formDocFiveteen from "./formDocFiveteen.json";
 import formDocSixteen from "./formDocSixteen.json";
+import formDocSeventeen from "./formDocSeventeen.json";
 
 export {
   formDocOne,
@@ -34,4 +35,5 @@ export {
   formDocFourteen,
   formDocFiveteen,
   formDocSixteen,
+  formDocSeventeen,
 };

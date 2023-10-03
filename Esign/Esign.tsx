@@ -30,6 +30,7 @@ import {
   formDocFourteen,
   formDocFiveteen,
   formDocSixteen,
+  formDocSeventeen,
 } from "./jsons";
 
 const PdfViewer = dynamic(() => import("./pdfReader"), { ssr: false });
@@ -140,6 +141,13 @@ const contractList = [
     label: "پیوست: نمونه اقرارنامه",
     data: formDocSixteen,
     name: "formDocSixteen",
+    isVisible: false,
+    statue: true,
+  },
+  {
+    label: "فرم مشخصات اشخاص حقیقی",
+    data: formDocSeventeen,
+    name: "formDocSeventeen",
     isVisible: false,
     statue: true,
   },
