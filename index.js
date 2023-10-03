@@ -28,8 +28,6 @@ fs.readFile(docxFilePath, (err, data) => {
         res.push({ pages: [{ entities: page }] });
       }
 
-      res[0].pages[0].entities.push({ table: tableArray, id: "table" });
-      tableArray.push(res[0].pages[0].entities.slice(6, 14));
       const jsonText = JSON.stringify(res, null, 2);
       fs.writeFile("output.json", jsonText, (writeErr) => {
         if (writeErr) {
