@@ -5,7 +5,8 @@ const fs = require("fs");
 // const pdf = require("pdf-parse");
 
 const docxFilePath = "./test4.docx";
-const pageNumber = 48;
+const pageNumber = 28;
+const tableArray = Array(4).fill([]);
 // Read the DOCX file
 fs.readFile(docxFilePath, (err, data) => {
   if (err) {
@@ -26,6 +27,9 @@ fs.readFile(docxFilePath, (err, data) => {
         const page = output.slice(i, i + chunkSize);
         res.push({ pages: [{ entities: page }] });
       }
+
+      res[0].pages[0].entities.push({ table: tableArray, id: "table" });
+      tableArray.push(res[0].pages[0].entities.slice(6, 14));
       const jsonText = JSON.stringify(res, null, 2);
       fs.writeFile("output.json", jsonText, (writeErr) => {
         if (writeErr) {

@@ -110,42 +110,18 @@ function buildFolderData(rootDir) {
   }
 
   crawlDirectory(rootDir);
-  // const filePath = "data.json";
-  // createJsonFile(folderData, filePath);
-
   return folderData;
 }
 
 if (require.main === module) {
   const rootDirectory = "./folder2";
   const folderData = buildFolderData(rootDirectory);
-  // function convertJsonToFormat(json) {
-  //   const result = [];
-  //   for (const key in json) {
-  //     if (json.hasOwnProperty(key)) {
-  //       const obj = { name: key, children: [] };
-  //       const child = json[key];
-  //       if (typeof child === "object" && Object.keys(child).length > 0) {
-  //         obj.children = convertJsonToFormat(child);
-  //       }
-  //       result.push(obj);
-  //     }
-  //   }
-  //   return result;
-  // }
 
   const parsedInput = JSON.parse(JSON.stringify(folderData, null, 2));
-  // console.log(parsedInput);
-
-  const outputJSON = {
-    name: "src",
-    children: Object.entries(parsedInput.src).map(([name, item]) => ({
-      name,
-      children: [convertToDesiredFormat(item)],
-    })),
-  };
-
-  // const formattedData = convertJsonToFormat(parsedInput);
+  const outputJSON = Object.entries(parsedInput).map(([name, item]) => ({
+    name,
+    children: [convertToDesiredFormat(item)],
+  }));
   const filePath = "data.json";
   createJsonFile(outputJSON, filePath);
 }
@@ -170,71 +146,3 @@ function createJsonFile(data, filePath) {
     console.error("Error writing JSON data: " + err);
   }
 }
-
-function transformObject(obj) {
-  const result = {
-    name: "",
-    children: [],
-  };
-
-  for (const key in obj) {
-    if (obj.hasOwnProperty(key)) {
-      const child = {
-        name: key,
-        children: [],
-      };
-
-      result.children.push(child);
-    }
-  }
-
-  return result.children;
-}
-
-const test = {
-  src: {
-    "frame.test.tsx": {
-      children: [
-        {
-          name: "assertOrder",
-          children: [],
-        },
-        {
-          name: "resizeFrameOverElement",
-          children: [],
-        },
-        {
-          name: "dragElementIntoFrame",
-          children: [],
-        },
-        {
-          name: "selectElementAndDuplicate",
-          children: [],
-        },
-        {
-          name: "expectEqualIds",
-          children: [],
-        },
-        {
-          name: "Excalidraw",
-          children: [],
-        },
-      ],
-    },
-    "bug-issue-template.js": {
-      children: [],
-    },
-  },
-};
-
-const test2 = {
-  name: "src",
-  children: [{ name: "bug-issue-template.j", children: [] }],
-};
-
-const outputJSON = Object.entries(test).map(([name, item]) => ({
-  name,
-  children: item.children || [],
-}));
-
-console.log(outputJSON);
