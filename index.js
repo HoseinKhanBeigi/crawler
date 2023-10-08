@@ -4,7 +4,7 @@ const mammoth = require("mammoth");
 const fs = require("fs");
 // const pdf = require("pdf-parse");
 
-const docxFilePath = "./test66.docx";
+const docxFilePath = "./real2.docx";
 const pageNumber = 28;
 const tableArray = Array(4).fill([]);
 // Read the DOCX file
@@ -16,6 +16,7 @@ fs.readFile(docxFilePath, (err, data) => {
   mammoth
     .extractRawText({ buffer: data })
     .then((result) => {
+      console.log(result)
       const paragraphs = result.value.split("\n\n");
       const output = paragraphs
         .map((paragraph) => ({ text: paragraph }))
@@ -29,7 +30,7 @@ fs.readFile(docxFilePath, (err, data) => {
       }
 
       const jsonText = JSON.stringify(res, null, 2);
-      fs.writeFile("output2.json", jsonText, (writeErr) => {
+      fs.writeFile("real2.json", jsonText, (writeErr) => {
         if (writeErr) {
           console.error("Error writing JSON file:", writeErr);
         } else {
