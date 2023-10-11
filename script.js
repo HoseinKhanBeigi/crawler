@@ -123,7 +123,7 @@ if (require.main === module) {
     children: [convertToDesiredFormat(item)],
   }));
   const filePath = "data.json";
-  createJsonFile(outputJSON, filePath);
+  createJsonFile(parsedInput, filePath);
 }
 
 function convertToDesiredFormat(input) {
